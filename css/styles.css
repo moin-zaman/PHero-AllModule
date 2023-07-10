@@ -1,0 +1,73 @@
+/* nav related styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+.nav-title {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+    margin-right: 50px;
+}
+
+.textcomm-primary-clr {
+    color: #FD6E0A;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+nav>ul li {
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+nav>ul li a {
+    text-decoration: none;
+}
+
+.nav-btn {
+    width: 115px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 700;
+    color: white;
+}
+
+.btn-primary {
+    border-radius: 5px;
+    background: #FD6E0A;
+    border-width: 0;
+}
+
+.banner {
+    padding: 50px 50px 50px 170px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-btn {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 700;
+    color: white;
+}
+
+header div.banner div.banner-pic img {
+    max-width: 450px;
+    height: 500px;
+}
