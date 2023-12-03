@@ -1,0 +1,20 @@
+গিট এবং গিটহাব রিলেটেড কিছু ইন্টারভিউ প্রশ্ন নিচে দেওয়া হলো। এই প্রশ্নগুলোর উত্তর খুঁজে বের করে নিজের মতো করে নোট করে ফেলার চেষ্টা করবে। ভবিষ্যতে দরকার হলে তখন এইখান থেকে দেখে নিতে পারবে। 
+
+1) Why Version Control System is needed?
+Ans: i)Collaboration
+	  ii)Storng Version
+	  iii)Restoring Previous Versions
+	  iv) Backup
+
+১) What is Git? What are the advantages of using Git?
+Ans: Git is a Distributed version control system widely used in software 	dvelopment
+	ii)It allows multiple developers to work collaboratively on a project
+	iii)Can effeciently manage and track changes to the source code
+
+২) What do you understand by the term ‘Version Control System’?
+
+৩) What’s the difference between Git and GitHub?
+
+৪) Name a few Git commands with their function.
+
+৫) Difference between git fetch and git pull.
