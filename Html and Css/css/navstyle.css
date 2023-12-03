@@ -17,6 +17,10 @@ header nav ul li > a{
     text-decoration: none;
 }
 
+header nav ul li > a:hover{
+    background-color: aqua;
+}
+
 
 /* header nav ul{
     background-color: ;
