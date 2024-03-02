@@ -1,37 +1,41 @@
-header nav ul{
+/* header nav ul{
     background-color: ;
-}
-header  nav > ul{
+} */
+/* header  nav > ul{
     display: flex;
     margin: 0 auto;
     justify-content: center;
-}
+    margin-bottom: 100px;
+} */
 
-header nav ul > li{
+/* header nav ul > li{ */
     /* display: inline; */
-    list-style-type: none;
-    margin-right: 50px;
-} 
+    /* list-style-type: none;
+    margin-right: 40px;
+}  */
 
-header nav ul li > a{
+/* header nav ul li > a{
     text-decoration: none;
 }
 
 header nav ul li a:hover{
-    background-color: aqua;
+    background-color: yellow;
+    text-decoration: underline;
+
 }
 
-header nav ul li > ul{
+header nav  ul li > ul{
     display: none;
-}
-
-
-header nav ul li:hover > ul{
-    display: block;
     position: absolute;
-    padding-left: 10px;
+} */
+
+
+/* header nav  ul li:hover > ul{
+    display: block; */
+    /* position: absolute; */
+    /* padding-left: 40px;
     background-color: lightyellow;
-}
+} */
 
 
 
@@ -48,3 +52,36 @@ header nav ul > li{
     list-style-type: none;
     margin-right: 50px;
 }  */
+
+header nav > ul{
+    display: flex;
+    /* margin: 0 auto; */
+    justify-content: center;
+}
+
+header nav ul li{
+    list-style-type: none;
+
+}
+
+nav li a{
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    font-size: bold;
+    color: blueviolet;
+}
+
+nav li ul {
+    display: none;
+}
+
+nav li:hover > ul{
+    display: block;
+    position: absolute;
+    background-color: antiquewhite;
+    padding-right: 30px;
+}
