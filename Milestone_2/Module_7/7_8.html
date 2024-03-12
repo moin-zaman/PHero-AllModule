@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Things You Need To Do To Make A Website Responsiv</title>
+
+    <style>
+
+        body{
+            max-width: 1140px;
+            border: 2px solid tan;
+            margin: 0 auto;
+
+        }
+
+        .imageContainer{
+            display: flex;
+        }
+
+        /* Display Flex korar por duita div 50% 50% kore jayga nibe */
+        .imageContainer div{
+            max-width: 50%;
+        }
+        
+
+        img{
+            width: 100%;
+            border: 2px dotted black;
+        }
+
+        @media screen and  (max-width: 576px){
+            .imageContainer{
+                /* flex-direction: column; */
+                flex-direction: column-reverse;
+            }
+
+            .imageContainer div{
+                max-width: 100%;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="imageContainer">
+
+        <div class="img1">
+            <img src="hFood.jpg" alt="">
+        </div>
+
+        <div class="img2">
+            <img src="tiger.webp" alt="">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
