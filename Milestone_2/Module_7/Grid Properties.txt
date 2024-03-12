@@ -1,0 +1,33 @@
+Grid Properties:
+
+Parent Properties:
+
+*grid-template-columns
+*grid-template-rows
+*grid-template
+*column-gap
+*row-gap
+*grid-gap
+*align-items: center/stretch/start/end
+*justify-content
+*align-content
+*place-items
+*place-content
+
+Children Properties:
+
+*grid-column: start/end
+*grid-row: start/end
+*justify-self
+*align-self
+*place-self
+
+
+/* For Responsive we use this */
+            /* grid-template-columns: 1fr 2fr 3fr; */
+
+If we use : 
+		
+			grid-template-columns: 300px 1fr;
+
+1fr size will change but the column of pixel size's will not change
