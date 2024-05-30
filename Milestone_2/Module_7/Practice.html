@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        body{
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .imageContainer{
+            display: flex;
+        }
+
+
+        .imageContainer div{
+            width: 50%;
+        }
+
+        img{
+            width: 100%;
+            border: 2px solid tan;
+        }
+
+        @media screen and (max-width: 576px){
+            .imageContainer{
+                flex-direction: column;
+            }
+
+            .imageContainer div{
+                width: 100%;
+            }
+        }
+
+    </style>
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+    <div class="imageContainer">
+
+        <div class="img1">
+            <img src="hFood.jpg" alt="">
+        </div>
+
+        <div class="img2">
+            <img src="tiger.webp" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,68 +8,76 @@
 
     <style>
 
-        .row{
-            height: 400px;
-
-            display: flex;
-            gap: 5px;
-            margin-bottom: 5px;
+        .header, .nav, .main, .sidebar, .advertise, .footer{
+            background-color: bisque;
+            border: 2px solid tomato;
+            padding: 5px;
+            border-radius: 5px;
         }
 
-        img{
-            width: 100%;
-            height: 100%;
+        .header{
+            grid-area: header;
         }
 
-        .verticalCollage{
-            height: calc(( 100% - 5px )/2);
+        .nav{
+            grid-area: nav;
         }
 
-        .row div{
-            flex: 1;
+        .main{
+            grid-area: main;
         }
 
-        .squareCollage{
+        .sidebar{
+            grid-area: sidebar;
+        }
+
+        .advertise{
+            grid-area: advertise;
+        }
+
+        .footer{
+            grid-area: footer;
+        }
+
+        .container{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 5px;
+            gap: 20px;
+            grid-template-areas: 
+            
+            "header     header  header  header"
+            "nav        main    main    sidebar"
+            "nav        main    main    advertise"
+            "footer     footer  footer  footer"
+
+            ;
         }
 
         @media screen and (max-width: 576px){
-            .row{
-                flex-direction: column;
-                height: auto;
-            }
+            .container{
+                grid-template-areas: 
+                
+                "header"
+                "main"
+                "sidebar"
+                "nav"
+                
+               
+                "advertise"
+                "footer"
 
-
-            .squareCollage{
-                grid-template-columns: repeat(1, 1fr);
+                ;
             }
         }
 
-        @media screen and (min-width: 577px) and (max-width: 772px){
-            .row{
-                display: grid;
-                grid-template-columns: repeat(2, auto);
-                height: auto;
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .container{
+                grid-template-areas: 
+                "header  header  header"
+                "nav     nav     nav"
+                "sidebar main main"
+                "advertise  footer   footer"
+                ;
             }
-
-            .verticalCollage{
-                border: 2px solid yellow;
-                height: auto;
-                display: grid;
-                grid-column: span 2;
-                grid-template-columns: repeat(2, auto);
-                gap: 5px;
-
-            }
-
-            
-            
-
-            
-
-          
         }
 
     </style>
@@ -76,63 +85,67 @@
 </head>
 
 
-<body>
+<body class="container">
 
-    <head>
+    <header class="header">
 
-        <h1>My Picture Collage</h3>
+        <h3>The header</h3>
 
-    </head>
+    </header>
 
-    <main>
 
-        <section>
+    <nav class="nav">
 
-            <div class="row">
+        <ul>
 
-                <img src="./images/A.jpg" alt="">
+            <li><a href="">Nav 1</a></li>
+            <li><a href="">Nav 2</a></li>
+            <li><a href="">Nav 3</a></li>
 
-            </div>
+        </ul>
 
-            <div class="row">
+    </nav>
 
-                <div>
-                    <img src="./images/B.jpg" alt="">
-                </div>
-                
-                <div>
-                    <img src="./images/C.jpg" alt="">
-                </div>
-                
-                <div class="verticalCollage">
-                    <img src="./images/D.jpg" alt="">
-                    <img src="./images/E.jpg" alt="">
-                </div>
 
-            </div>
+    <main class="main">
 
-            <div class="row">
-
-                <div>
-                    <img src="./images/F.jpg" alt="">
-                </div>
-
-                <div class="squareCollage">
-                    <img src="./images/G.jpg" alt="">
-                    <img src="./images/G.jpg" alt="">
-                    <img src="./images/G.jpg" alt="">
-                    <img src="./images/G.jpg" alt="">
-                </div>
-
-                <div>
-                    <img src="./images/H.jpg" alt="">
-                </div>
-
-            </div>
-
-        </section>
+        <article>
+            <h3>Main Article 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa placeat, nihil unde porro similique
+                nesciunt dignissimos aut. Repellendus porro praesentium deserunt harum, sapiente a quasi recusandae
+                corporis accusamus facilis saepe.</p>
+        </article>
+        <article>
+            <h3>Main Article 2</h3>
+            <p>Reiciendis explicabo laborum porro ipsum. Amet, laboriosam officia. Rerum cum ex tenetur! Est magnam ipsa
+                totam maiores non libero animi perferendis. At architecto quod praesentium ipsum iure ad maiores
+                laboriosam!</p>
+        </article>
 
     </main>
-    
+
+
+        <div class="sidebar" >
+
+            <h4>Sidebar</h4>
+
+        </div>
+
+        <div class="advertise" >
+
+            <h4>Advertise</h4>
+
+        </div>
+
+
+    <footer class="footer">
+
+       <h3>The Footer</h3> 
+
+    </footer>
+
+
+
 </body>
+
 </html>
