@@ -13,7 +13,11 @@ Ans: Git is a Distributed version control system widely used in software 	dvelop
 
 ২) What do you understand by the term ‘Version Control System’?
 
+Ans: Version Control System are tools that helps team manage and track changes in code over time
+
 ৩) What’s the difference between Git and GitHub?
+
+Ans: Git is a Distributed Version Control System and It tracks and  manages the progress of source code and Github visually shows that track and manages.
 
 ৪) Name a few Git commands with their function.
 
