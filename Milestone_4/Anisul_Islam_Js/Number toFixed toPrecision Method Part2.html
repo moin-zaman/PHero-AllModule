@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number toFixed toPrecision Method Part 2</title>
+</head>
+<body>
+
+    <script>
+        var num = "12";
+
+        num = typeof(Number(num));
+        document.write(num, "<br/>");
+
+        var num1 = "  12.45   ";
+        num2 = typeof(Number(num1));
+        document.write(num2, "<br/>");
+        document.write(num1, "<br/>");
+
+        var boolT = true;
+        var boolF = false;
+
+        document.write(Number(boolT), "<br/>");
+        document.write(Number(boolF), "<br/>");
+
+        var num3 = 12.456;
+        num3 = num3.toFixed(2);
+        document.write(typeof(num3),"<br/>");
+
+        num3 = Number(num3);
+        document.write(typeof(num3),"<br/>");
+
+
+        // num.toFixed(5) or num.toPrecision(3) functions always returns strings So we have to type cast those values to Number remember that
+
+    </script>
+    
+</body>
+</html>
