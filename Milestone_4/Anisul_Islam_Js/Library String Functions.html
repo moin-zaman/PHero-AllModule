@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Functions For string</title>
+</head>
+<body>
+
+  <script>
+
+    var text =  "Bangladesh";
+
+    var len = text.length;
+
+    document.write("Total character in " + text + " is : " + len, "<br/>");
+
+    var name = prompt("Please enter your name : ");
+
+    document.write(name + "<br/>");
+
+    var charIndexNUm = text.charAt(5);
+    document.write(charIndexNUm, "<br/>"); 
+
+    var upper = text.toUpperCase();
+    var lower = text.toLowerCase();
+    document.write(upper, "<br/>");
+    document.write(lower, "<br/>");
+
+    var text2 = " amar Baaler desh";
+    var concatt = text.concat(text2);
+    document.write(concatt, "<br/>");
+
+    var sliced = text.slice(0,4);
+    document.write(sliced, "<br/>");
+
+
+  </script>
+
+    
+</body>
+</html>
