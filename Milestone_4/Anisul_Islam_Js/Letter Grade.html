@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Grade Program</title>
+</head>
+<body>
+
+    <script>
+
+        var marks = Number(prompt("Please enter your to see your grade : "));
+
+        if(marks >= 50 && marks <= 100)
+            {
+                if(marks >= 50 && marks < 60)
+                    {
+                        document.write("Grade D", "<br/>");
+                    }
+
+                else if(marks >= 60 && marks < 65)
+                    {
+                        document.write("Grade D+", "<br/>");
+                    }
+
+                else if(marks >= 65 && marks < 70)
+                    {
+                        document.write("Grade C", "<br/>");
+                    }
+
+                else if(marks >= 70 && marks < 75)
+                    {
+                        document.write("Grade C+", "<br/>");
+                    }
+
+                else if(marks >= 75 && marks < 80)
+                    {
+                        document.write("Grade B", "<br/>");
+                    }
+
+                else if(marks >= 80 && marks < 85)
+                    {
+                        document.write("Grade B+", "<br/>");
+                    }
+                else if(marks >= 85 && marks < 90)
+                    {
+                        document.write("Grade A", "<br/>");
+                    }
+
+                else
+                    {
+                        document.write("Grade A+", "<br/>");
+                    }
+
+            }
+            else if(marks < 50 && marks >= 0) 
+            {
+                document.write("Sorry !! You Failed in the exam", "<br/>");
+            }
+            else
+            {
+                document.write("Please enter a valid marks", "<br/>");
+            }
+
+
+    </script>
+    
+</body>
+</html>
