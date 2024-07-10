@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break And Continue</title>
+</head>
+<body>
+
+    <script>
+
+        for(var x = 1; x <= 20; x++)
+        {
+            if(x === 10)
+            {
+            break;
+            }
+            document.write(x, " ");
+        }
+
+        document.write("<br/>");
+
+        for(var x = 1; x <= 20; x++)
+        {
+            if(x === 10)
+            {
+            continue;
+            }
+            document.write(x, " ");
+        }
+
+        document.write("<br/>");
+
+        for(var x = 1; x <= 20; x++)
+        {
+            if(x < 10)
+            {
+            continue;
+            }
+            document.write(x, " ");
+        }
+
+    </script>
+    
+</body>
+</html>
