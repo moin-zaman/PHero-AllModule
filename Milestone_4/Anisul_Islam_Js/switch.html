@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+
+    <script>
+
+    var num = prompt("Please enter any number From 0 to 5 : ");
+    num = parseInt(num,10);
+    document.write(typeof(num), "<br/>");
+    document.write(num, "<br/>");
+
+
+    switch(num)
+    {
+        case 0:
+            document.write("Zero", "<br/>");
+            break;
+
+        case 1:
+            document.write("One", "<br/>");
+            break;
+
+        case 2:
+            document.write("Two", "<br/>");
+            break;
+
+        case 3:
+            document.write("Three", "<br/>");
+            break;
+
+        case 4:
+            document.write("Four", "<br/>");
+            break;
+
+        case 5:
+            document.write("Five", "<br/>");
+            break;
+
+        default:
+            document.write("Please enter 0 to 5", "<br/>"); 
+    }
+
+    var ch = prompt("Please enter any alphabet : ");
+
+    switch(ch)
+    {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            document.write("Vowel", "<br/>");
+            break;
+        default:
+            document.write("Consonant", "<br/>");
+        
+    }
+
+
+    </script>
+    
+</body>
+</html>
