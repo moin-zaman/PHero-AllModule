@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of Various Shapes && Temperatures Convert</title>
+</head>
+<body>
+
+    <script>
+
+        var num1 = Number(prompt("Please Enter the Base : "));
+
+        var num2 = Number(prompt("Please Enter the height : "));
+
+        var areaT = 0.5 * num1 * num2;
+
+        document.write("Area of Triangle is : " , areaT, "<br/>");
+
+        var areaR = num1 * num2;
+
+        document.write("Area of Rectangle is : " , areaR, "<br/>");
+
+        var f = Number(prompt("Please enter the farenhite of temperatur : "));
+
+        var c = (f-32)/1.8;
+
+        c = c.toFixed(2);
+
+        document.write(f, " degree farenhite = " , c , " degree celcius", "<br/>");
+
+
+    </script>
+    
+</body>
+</html>
