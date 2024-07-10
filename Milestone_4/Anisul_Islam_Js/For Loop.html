@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+
+    <script>
+
+        var n = Number(prompt("Please Enter the range of the loop : "));
+
+        for(var x = 0; x <= n; x++)
+            {
+                document.write(x, " ");
+            }
+
+            document.write("<br/>");
+
+        for(var x = n; x >= 1; x--)
+            {
+                document.write(x, " ");
+            }
+
+            document.write("<br/>"); 
+            
+        var sum = 0;
+
+        for(var x = 0; x <= n; x++)
+            {
+                sum = sum + x;
+            
+            }
+            document.write("Sum = ", sum, "<br/>");
+
+            document.write("<br/>");
+
+            var m = Number(prompt("Please Enter the Number : "));
+
+            var result = 0;
+
+            for(var x = 1; x <= 10; x++)
+            {
+                result = m * x;
+                document.write(m, "*", x, " = ", result, "<br/>");
+            }
+
+            document.write("<br/>"); 
+
+        
+    </script>
+    
+</body>
+</html>
