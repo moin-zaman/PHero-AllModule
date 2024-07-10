@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large Numbers</title>
+</head>
+<body>
+
+    <script>
+
+        var n1 = Number(prompt("Please enter any number1 : "));
+        var n2 = Number(prompt("Please enter any number2 : "));
+        var n3 = Number(prompt("Please enter any number3 : "));
+
+
+        if(n1 > n2 && n2 > n3)
+            {
+                document.write(n1, " is greater than ",  n2 , " and ", n3, "<br/>");
+            }
+
+        else if(n2 > n1 && n2 > n3)
+            {
+                document.write(n2, " is greater than ",  n1 , " and ", n3, "<br/>");
+            }
+
+        else if(n3 > n1 && n3 > n2)
+            {
+                document.write(n3, " is greater than ",  n1 , " and ", n2, "<br/>");
+            }
+        else
+        {
+            document.write(n1, " = ", n2, " = ", n3,"<br/>");
+        }
+        
+
+    </script>
+    
+</body>
+</html>
