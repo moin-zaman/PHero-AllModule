@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immediately Invokeable Function Expressions and Function Expressions</title>
+</head>
+<body>
+
+    <script>
+
+        (function display(msg)
+        {
+            document.write(msg, "<br/>");
+        }
+        )("My name is Moin Zaman");
+
+
+
+        (function addition(num1, num2)
+        {
+            var result = num1 + num2;
+            document.write("Sum = ", result, "<br/>");
+        }
+        )(2, 7);
+
+        // Function Expressions;
+
+        const display =  function display1(num1, num2)
+        {
+            var result = num1 * num2;
+            document.write("Multiplication = ", result, "<br/>");
+        };
+
+        display(3,6);
+        
+
+    </script>
+    
+</body>
+</html>
