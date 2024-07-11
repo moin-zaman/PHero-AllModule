@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+    <script>
+
+        function addition(num1, num2)
+        {
+            var result  = num1 + num2;
+            return result;
+        }
+
+        var add = addition(5,6);
+        document.write("Addition of 2 value : ", add, "<br/>");
+
+        function multip(num1, num2)
+        {
+            var result  = num1 * num2;
+            return result;
+        }
+
+        var mult = multip(5,6);
+        document.write("Multiplication of 2 value : ", mult, "<br/>");
+
+
+        function division(num1, num2)
+        {
+            var result  = num1 / num2;
+            return result;
+        }
+
+        var divi = division(5,6);
+        divi = divi.toFixed(2);
+        document.write("Division of 2 value : ", divi, "<br/>");
+
+        function remaider(num1, num2)
+        {
+            var result  = num1 % num2;
+            return result;
+        }
+
+        var rem = remaider(5,6);
+        document.write("Remainder of 2 value : ", rem, "<br/>");
+
+        
+
+    </script>
+    
+</body>
+</html>
