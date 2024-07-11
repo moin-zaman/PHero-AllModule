@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional or Ternary Operator</title>
+</head>
+<body>
+
+    <script>
+
+        var n1 = Number(prompt("Please enter any number1 : "));
+        var n2 = Number(prompt("Please enter any number2 : "));
+        var n3 = Number(prompt("Please enter any number3 : "));
+
+
+        var result = n1 > n2 ? (n1 > n3 ? n1 : n3) : n2 > n3 ? n2 : n3;
+
+        document.write(result, "<br/>");
+
+        var result2 = n1 < 0 ? "Negative" : n1 > 0 ? "Positive" : "Zero"
+
+        document.write(result2, "<br/>");
+
+
+    </script>
+    
+</body>
+</html>
