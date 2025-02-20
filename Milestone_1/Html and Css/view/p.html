@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+
+    <style>
+
+        nav > ul{
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        ul li {
+
+            margin-right: 20px;
+            margin-bottom: 20px;
+            list-style-type: none;
+        }
+
+        nav > ul > li > a:hover{
+
+            background-color: burlywood;
+            text-decoration: underline;
+
+        }
+
+
+        li ul li > a:hover{
+
+            background-color: tomato;
+
+        }
+
+        li a{
+
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        li > ul{
+            display: none;
+        }
+
+        ul > li:hover > ul{
+            display: block;
+            position: absolute;
+            background-color: antiquewhite;
+            padding-right: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+
+            <ul>
+
+                <li><a href="nav 4.5 .html">nav 4.5</a></li>
+                <li><a href="Form.html">Form</a></li>
+                <li>
+                    <a href="Table.html">Table</a>
+    
+                    <ul>
+                        <li><a href="nav 4.5 .html">nav 4.5</a></li>
+                        <li><a href="Form.html">Form</a></li>
+                        <li><a href="Table.html">Table</a></li>
+
+
+                        <li>
+
+                            <a href="Entity and Pre tag.html">Entity and Pre Tag</a>
+
+                            <ul>
+                                <li><a href="nav 4.5 .html">nav 4.5</a></li>
+                                <li><a href="Form.html">Form</a></li>
+                                <li><a href="Table.html">Table</a></li>
+                                <li><a href="Entity and Pre tag.html">Entity and Pre Tag</a></li>
+                
+                            </ul>
+                        
+                        </li>
+        
+                    </ul>
+    
+                </li>
+    
+                <li><a href="Entity and Pre tag.html">Entity and Pre Tag</a></li>
+    
+            </ul>
+
+        </nav>
+
+    </header>
+    
+</body>
+</html>

@@ -4,42 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Grid Layout Template Columns Grid Gap</title>
 
     <style>
         
-        body{
-            max-width: 1140px;
-            margin: 0 auto;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3, 1fr) 2fr;
+            /* column-gap: 20px;
+            row-gap: 40px; */
+
+            /* gap: 30px; */
+
+            height: 600px;
+            border: 2px solid saddlebrown;
+
         }
 
-        .imageContainer{
-            display: flex;
+        .item{
+            border: 1px solid aquamarine;
         }
 
-
-        .imageContainer div{
-            width: 50%;
-        }
-
-        img{
-            width: 100%;
-            border: 2px solid tan;
-        }
-
-        @media screen and (max-width: 576px){
-            .imageContainer{
-                flex-direction: column;
-            }
-
-            .imageContainer div{
-                width: 100%;
-            }
-        }
+        
 
     </style>
-
-
 
 
 
@@ -49,17 +38,32 @@
 
 <body>
 
-    <div class="imageContainer">
+    <h2>Explore Grid Layout: 2D layout</h2>
 
-        <div class="img1">
-            <img src="hFood.jpg" alt="">
-        </div>
-
-        <div class="img2">
-            <img src="tiger.webp" alt="">
-        </div>
-
+    <div class="container">
+        <div class="item">item - 1</div>
+        <div class="item">item - 2</div>
+        <div class="item">item - 3</div>
+        <div class="item">item - 4</div>
+        <div class="item">item - 5</div>
+        <div class="item">item - 6</div>
+        <div class="item">item - 7</div>
+        <div class="item">item - 8</div>
+        <div class="item">item - 9</div>
+        <div class="item">item - 10</div>
+        <div class="item">item - 11</div>
+        <div class="item">item - 12</div>
+        <div class="item">item - 13</div>
+        <div class="item">item - 14</div>
+        <div class="item">item - 15</div>
+        <div class="item">item - 16</div>
+        <div class="item">item - 17</div>
+        <div class="item">item - 18</div>
+        <div class="item">item - 19</div>
+        <div class="item">item - 20</div>
     </div>
+   
+    
 </body>
 
 </html>
