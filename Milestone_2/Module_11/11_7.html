@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Animation</title>
+
+    <style>
+
+        @keyframes ping-pong {
+            from{
+                left: 0;
+            }
+            to{
+                left: 600px;
+                background-color: red;
+                box-shadow: 3px 2px 4px 2px palegreen;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+
+            25%{
+                top: 200px;
+                left: 200px;
+
+                background-color: red;
+                box-shadow: 3px 2px 4px 2px black;
+            }
+
+            50%{
+
+                top: 0px;
+                left: 400px;
+
+                background-color: green;
+                box-shadow: 3px 2px 4px 2px white;
+
+            }
+
+            100%{
+                top: 200px;
+                left: 600px;
+
+                background-color: burlywood;
+                box-shadow: 3px 2px 4px 2px palegreen;
+            }
+            
+        }
+
+        .stage{
+            width: 700px;
+            height: 300px;
+            background-color: aqua;
+            border: 2px solid steelblue;
+        }
+
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            /* animation: ping-pong 2s ease-in-out 1s infinite alternate; */
+
+            animation: bounce 4s ease-in-out 0s infinite alternate;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <h2>Explore Animation</h2>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>

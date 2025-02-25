@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_3 Overflow</title>
+
+    <style>
+
+        .box{
+            border: 2px solid steelblue;
+            width: 300px;
+            height: 300px;
+
+            /* overflow-y: scroll; */
+            overflow-y: auto;
+            /* overflow: hidden; */
+        }
+
+        /* #box-1{ */
+            /* overflow: hidden;
+            overflow: scroll;
+            overflow-x: hidden; */
+            /* overflow-y: scroll; */
+            /* overflow-x: scroll; */
+        /* } */
+
+
+        .ellipsis{
+            border: 2px solid black;
+            width: 300px;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* text-overflow: clip; */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <head>
+
+        <p title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quod hic impedit facere aut dolorum labore vitae! Earum, repudiandae incidunt." class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quod hic impedit facere aut dolorum labore vitae! Earum, repudiandae incidunt.</p>
+
+    </head>
+
+    <section class="container">
+
+        <div class="box" id="box-1">
+            <h3>My Box - 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, dolorem, ratione ipsam quae repellendus consectetur at est temporibus quam illum veniam architecto quibusdam laborum voluptates, natus aliquam aliquid maxime. Id placeat dolorum sapiente, maxime doloremque omnis ipsam neque veniam magnam sunt tempora quia obcaecati numquam consectetur, qui quo ratione minima sint earum pariatur! Ipsam iure unde autem consectetur distinctio quibusdam culpa rerum optio odit tenetur, magni quos error tempora dolores repellat porro incidunt quae non architecto numquam adipisci ducimus voluptate laboriosam? Nobis repellendus quam iusto officia iure itaque deleniti nam? Ducimus placeat corrupti, voluptates ut minima accusamus cum soluta ex laborum a maiores. Totam officiis nihil magnam nobis sequi ab non voluptates ut, quae minus architecto officia laborum fuga mollitia rem quos vitae consectetur consequatur, adipisci fugiat enim saepe provident earum atque! Sed corrupti laboriosam totam laborum numquam error cumque quo dolorem beatae, temporibus accusantium quis ratione iste iure aspernatur earum veritatis odit tenetur placeat a facere. Totam perferendis iure ex magnam maiores alias nesciunt quis saepe dolorem architecto facere, illo fugit qui expedita consequatur atque, quidem nemo eius at impedit aliquid quaerat, ratione reprehenderit. Excepturi accusamus possimus assumenda blanditiis ratione odio, placeat ex voluptates, ipsum ad quos veniam odit.</p>
+        </div>
+
+
+        <div class="box" id="box-2">
+            <h3>My Box - 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolore velit eaque culpa magni, tenetur ea illum iure possimus porro aut itaque veniam dicta ducimus vero? Velit, expedita excepturi. Eaque temporibus laboriosam repellendus quam magni voluptatum soluta porro iusto. Vitae iure deserunt ipsa mollitia? Placeat quo omnis adipisci amet ea sint commodi suscipit voluptates ipsam voluptate. Rerum laborum perferendis aliquid illo? Culpa corrupti sunt voluptatibus repellat illum maxime error, aliquid quis necessitatibus in velit autem recusandae sed. Harum sunt id mollitia delectus itaque dignissimos saepe corporis sequi officiis dolore libero nemo animi, tempore error magni, deserunt quae pariatur quibusdam. Voluptate atque odit reiciendis nobis, deleniti explicabo consequatur veritatis! Repellendus doloremque, eligendi soluta in tenetur magnam quae nemo rem incidunt debitis minus magni vero officiis unde quos tempore dolor. Quia, obcaecati praesentium nisi magni quis inventore rerum tempore ipsam nobis harum placeat. Libero excepturi ex numquam. Totam nihil ipsa maxime ullam nam laboriosam ab suscipit quidem. Quaerat accusantium voluptates debitis ipsa quos numquam illum deserunt, molestias, dolore quas libero? Nemo voluptate hic delectus iusto distinctio eligendi amet? Commodi ea, tempore quae libero, beatae sit doloribus illum a velit iste fuga. Labore animi quasi blanditiis, nisi deserunt reprehenderit id aliquam omnis architecto!</p>
+        </div>
+
+        <div class="box">
+            <h3>My Box - 3</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae esse quo quas tempore in deserunt minus voluptatem laboriosam distinctio iure?</p>
+        </div>
+
+    </section>
+    
+</body>
+</html>
