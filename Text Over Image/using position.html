@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Over Image Using Position</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="./hFood.jpg" alt="Image" class="image">
+        <div class="text">This is a text over an image</div>
+    </div>
+
+</body>
+</html>
