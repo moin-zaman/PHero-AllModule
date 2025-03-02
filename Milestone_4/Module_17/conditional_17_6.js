@@ -1,9 +1,9 @@
 //  node "conditional_17_6.js"
 
-var n1 = 10;
-var n2 = 18;
-var n3 = 21;
-if(n1 > n2 && n2 > n3)
+var n1 = 19;
+var n2 = 12;
+var n3 = 13;
+if(n1 > n2 && n1 > n3)
 {
     console.log(n1);
 }
