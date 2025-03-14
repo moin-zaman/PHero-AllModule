@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25_3</title>
+    <link rel="stylesheet" href="./css/25_1.css">
+
+    <style>
+        li {
+            color: aqua;
+        }
+
+        #fruitsTitle{
+            color: blue;
+        }
+
+        .places{
+            color: chartreuse;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestiae, eaque fugit suscipit quo
+            consectetur laudantium placeat animi modi sed?</p>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h1>My Awesome DOM de baba</h1>
+
+        <ul>
+            <li>Jalali Set</li>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+        </ul>
+
+        </section>
+
+
+        <section>
+
+            <h1 id="fruitsTitle">Fruits I like</h1>
+
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h1>Places I like to visit</h1>
+
+            <ul>
+                <li class="places">Sundarbar</li>
+                <li class="places">bandarban</li>
+                <li class="places">Cox's Bazar</li>
+                <li class="places">Sonadia Island</li>
+                <li>Boga Lake</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        
+        console.log(document.getElementById('fruitsTitle'));
+
+
+
+        const fruitTitle = document.getElementById('fruitsTitle');
+
+        // const fruitTitle = document.getElementById('fruitsTitle').innerText = "Fruit Title changed by JS";
+
+        fruitTitle.innerText = "Fruit Title changed by JS";
+
+        // document.getElementsByClassName('places');
+
+        console.log(document.getElementsByClassName('places'));
+
+        const plces = document.getElementsByClassName('places');
+
+        for(const place of plces){
+            // console.log(place);
+            console.log(place.innerText);
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25_5</title>
+    <link rel="stylesheet" href="./css/25_1.css">
+
+    <style>
+        li {
+            color: aqua;
+        }
+
+        #fruitsTitle{
+            color: blue;
+        }
+
+        .importantPlaces{
+            color: chartreuse;
+        }
+
+        .fruitsContainer li{
+            color: darkred;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestiae, eaque fugit suscipit quo
+            consectetur laudantium placeat animi modi sed?</p>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h1>My Awesome DOM de baba</h1>
+
+        <ul>
+            <li>Jalali Set</li>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+        </ul>
+
+        </section>
+
+
+        <section class="fruitsContainer">
+
+            <h1 id="fruitsTitle" class="someClass randomClass blueBg">Fruits I like</h1>
+
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h1>Places I like to visit</h1>
+
+            <ul>
+                <li class="importantPlaces">Sundarbar</li>
+                <li class="importantPlaces">bandarban</li>
+                <li class="importantPlaces">Cox's Bazar</li>
+                <li class="importantPlaces">Sonadia Island</li>
+                <li>Boga Lake</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <script>
+        
+        console.log(document.getElementById('fruitsTitle'));
+
+        document.getElementById('fruitsTitle').style.color = 'green';
+
+        document.getElementById('fruitsTitle').style.backgroundColor = 'red';
+
+        document.getElementById('fruitsTitle').style.textAlign = 'center';
+
+        document.getElementById('fruitsTitle').style.borderRadius = '20px';
+
+        document.getElementById('fruitsTitle').style.height = '50px';
+
+        // document.getElementById('fruitsTitle').style.fontStyle = 'italic';
+
+        document.getElementById('fruitsTitle').style.fontWeight = 'Bold';
+
+        document.getElementById('fruitsTitle').style.paddingTop = '10px';
+
+        document.getElementById('fruitsTitle').style.boxShadow = '3px 3px 4px 5px blue';
+        document.getElementById('fruitsTitle').style.boxShadow = '3px 3px 4px 5px blue';
+
+
+        const title = document.getElementById('fruitsTitle');
+
+
+        console.log(title.getAttribute('class'));
+        console.log(title.getAttribute('id'));
+
+
+        console.log(title.classList);
+
+        title.classList.remove('blueBg');
+        console.log(title.classList);
+
+        title.classList.add('purpleClass');
+        console.log(title.classList);
+
+        title.setAttribute('title','tooltip set by Javascript');
+
+        console.log(document.getElementsByClassName('fruitsContainer')[0].innerHTML);
+
+        // document.getElementsByClassName('fruitsContainer')[0].innerHTML = '<h2>ABc, Wow DOM is changing</h2>';
+
+        console.log(document.getElementsByClassName('fruitsContainer')[0].innerText);
+
+
+        // document.getElementsByClassName('fruitsContainer')[0].innerText = "Hello";
+
+
+
+
+
+        
+
+    </script>
+
+
+
+</body>
+
+</html>
