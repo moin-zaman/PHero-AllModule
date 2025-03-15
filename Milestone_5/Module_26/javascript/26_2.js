@@ -1,4 +1,4 @@
-// 2
+// 2 Important : We will use this sometimes
 
 function makeRed() {
     document.body.style.backgroundColor = 'red';
@@ -17,7 +17,7 @@ function makeBlue() {
 }
 
 
-// 4
+// 4 Not so important but we will use this
 
 const makePurpleButton = document.getElementById('make-purple');
 
