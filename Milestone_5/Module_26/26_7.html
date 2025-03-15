@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26_7</title>
+
+    <style>
+        #item-2 {
+            border: 2px solid rebeccapurple;
+        }
+
+        ul {
+            border: 2px solid tomato;
+        }
+
+        body {
+            border: 2px solid green;
+        }
+
+        section {
+            border: 2px solid blue;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+
+    <h1>Exploring Event Bubble</h1>
+    <section id="list-container">
+        <ul id="list-ul">
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">At, repudiandae.</li>
+            <li id="item-3">Explicabo, dolorem.</li>
+            <li id="item-4">Veritatis, perspiciatis!</li>
+            <li id="item-5">Accusantium, officia.</li>
+            <li id="item-6">Quam, quibusdam!</li>
+        </ul>
+    </section>
+
+    <script>
+
+        const item2 = document.getElementById('item-2');
+
+        const listUl = document.getElementById('list-ul');
+
+        const listContainer = document.getElementById('list-container');
+
+        const body = document.getElementById('body');
+
+
+
+        // Item 2
+
+        item2.addEventListener('click', function (event) {
+
+            console.log("Item-2 clicked");
+            // event.stopPropagation();
+            event.stopImmediatePropagation();
+
+
+        })
+
+
+        item2.addEventListener('click', function (event) {
+
+            console.log("Item-2 clicked");
+
+
+        })
+
+
+        item2.addEventListener('click', function (event) {
+
+            console.log("Item-2 clicked");
+
+
+        })
+
+        item2.addEventListener('click', function (event) {
+
+            console.log("Item-2 clicked");
+
+
+        })
+
+
+        // UL
+
+        listUl.addEventListener('click', function (event) {
+
+            console.log("ul clicked");
+
+        })
+
+
+        // Section
+
+        listContainer.addEventListener('click', function (event) {
+
+            console.log("Section Container clicked");
+
+        })
+
+
+        // Body
+
+        body.addEventListener('click', function (event) {
+
+            console.log("body of the html clicked");
+
+        })
+
+    </script>
+
+</body>
+
+</html>
