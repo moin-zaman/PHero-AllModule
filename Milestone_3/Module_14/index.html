@@ -15,7 +15,8 @@
     <script src="https://kit.fontawesome.com/8c9512f0cf.js" crossorigin="anonymous"></script>
 
     <!-- Tailwind CDN -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <!-- tailwind custom classes -->
     <script>
@@ -24,29 +25,34 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
-                }
-            }
-        }
+                    },
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif'],
+                    },
+                },
+            },
+        };
+
+
     </script>
 
     <!-- custom styles -->
     <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
+        .font-manrope1 {
+            font-family: 'Manrope', 'sans-serif';
         }
     </style>
 
 </head>
 
-    
 
-<body>
+
+<body class="font-manrope">
 
 
     <!-- Main Content -->
 
-    <main class="max-w-screen-xl mx-auto px-3 font-manrope">
+    <main class="max-w-screen-xl mx-auto px-3 ">
 
         <header class=" flex flex-col lg:flex-row md:flex-row pt-10 mb-20 lg:ml-18">
 
@@ -62,8 +68,9 @@
                 <p class="text-gray-500 lg:w-3/4 pt-3 font-semibold">
                     Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                 </p>
-                <button class="bg-linear-to-r from-orange-500 to-red-500 px-5 py-5 rounded-lg text-white font-bold text-xl my-3">
-                    Explore More 
+                <button
+                    class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-5 rounded-lg text-white font-bold text-xl my-3">
+                    Explore More
                     <i class="fa-solid fa-arrow-right -rotate-45">
                     </i>
                 </button>
@@ -80,10 +87,8 @@
                 </div>
 
                 <!-- Card -->
-                <div 
-                class="flex items-center bg-white shadow-lg px-2 py-2 md:py-4 lg:py-4 lg:px-10  rounded-lg absolute bottom-5 md:bottom-16 lg:bottom-5 right-40 md:right-42 lg:right-60 "
-
-                >
+                <div
+                    class="flex items-center bg-white shadow-lg px-2 py-2 md:py-4 lg:py-4 lg:px-10  rounded-lg absolute bottom-5 md:bottom-16 lg:bottom-5 right-40 md:right-42 lg:right-60 ">
 
                     <!-- Star Icon -->
                     <div>
@@ -117,7 +122,9 @@
                     Our Featured Products
                 </h1>
 
-                <p class="text-gray-500 mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,<br> by injected humour, or randomised words which don't look even slightly believable. </p>
+                <p class="text-gray-500 mt-4">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form,<br> by injected humour, or randomised words which
+                    don't look even slightly believable. </p>
 
             </div>
 
@@ -127,7 +134,7 @@
         <!-- Products -->
 
         <section class="lg:mr-40 mb-12 lg:mb-40 lg:ml-18">
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
 
@@ -194,7 +201,7 @@
 
                 <!-- Image Section -->
                 <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
-                    
+
                     <div class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"></div>
 
                     <div class="bg-orange-50 rounded-xl row-span-2">
@@ -218,7 +225,10 @@
                     </h1>
 
                     <p class="text-gray-500">
-                        The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.
+                        The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions .
+                        It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been
+                        deeply appreciated by its custoers because of good words of mouth and unique customized service
+                        orginated from Taiwan.
                     </p>
                     <br>
 
@@ -242,7 +252,7 @@
 
             </div>
 
-            
+
 
         </section>
 
@@ -250,154 +260,144 @@
 
         <section class="mt-10 md:mt-24 mb-10 md:mb-24  lg:ml-18 lg:mr-40">
 
-            <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-7 md:px-16 py-7 md:py-24"
-            >
+            <div
+                class="bg-gradient-to-r from-orange-500 to-red-500 rounded-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-7 md:px-16 py-7 md:py-24">
 
 
-            <!-- Text section -->
-            <div class="flex items-center justify-center mb-10 md:mb-0"
-            >
+                <!-- Text section -->
+                <div class="flex items-center justify-center mb-10 md:mb-0">
 
-                <div class="md:gw-5/6 "
-                >
+                    <div class="md:gw-5/6 ">
 
-                <h1 class="text-5xl font-bold mb-5">
-                    Meet Our Super Clients
-                </h1>
-                <p class="mb-5">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
-                </p>
-                <button class="bg-white text-orange-700 px-6 py-3 rounded-lg">Show All</button>
+                        <h1 class="text-5xl font-bold mb-5">
+                            Meet Our Super Clients
+                        </h1>
+                        <p class="mb-5">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable.
+                        </p>
+                        <button class="bg-white text-orange-700 px-6 py-3 rounded-lg">Show All</button>
 
-                </div>
-
-            </div>
-
-
-             <!-- Review Cards Section -->
-            <div class="relative"
-            >
-
-
-            <div class="absolute h-56 w-4/5 md:w-3/4 bg-white text-black rounded-lg px-5 flex items-center pt-10 md:pt-0 top-30 z-2"
-            >
-
-                <!-- Img  -->
-                <div class="absolute -top-5 -left-5 bg-white rounded-full p-1"
-                >
-
-                    <img src="./images/client.png" alt="">
+                    </div>
 
                 </div>
 
 
-                <!-- Box Content -->
+                <!-- Review Cards Section -->
+                <div class="relative">
 
-                <div class="text-gray-500"
-                >
 
-                    <p class="mb-5"
-                    >
-                        We are providing the best and suitable home insurance services for the people who are interested to treatment
-                    </p>
+                    <div
+                        class="absolute h-56 w-4/5 md:w-3/4 bg-white text-black rounded-lg px-5 flex items-center pt-10 md:pt-0 top-30 z-2">
 
-                    <h1 class="font-bold"
-                    >
-                        Ilham Yuda
-                    </h1>
+                        <!-- Img  -->
+                        <div class="absolute -top-5 -left-5 bg-white rounded-full p-1">
 
-                    <small class="font-bold">
-                        Businessman
-                    </small>
+                            <img src="./images/client.png" alt="">
+
+                        </div>
+
+
+                        <!-- Box Content -->
+
+                        <div class="text-gray-500">
+
+                            <p class="mb-5">
+                                We are providing the best and suitable home insurance services for the people who are
+                                interested to treatment
+                            </p>
+
+                            <h1 class="font-bold">
+                                Ilham Yuda
+                            </h1>
+
+                            <small class="font-bold">
+                                Businessman
+                            </small>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <!-- Top Card -->
+                    <div
+                        class="relative h-56 w-4/5 md:w-3/4 bg-white text-black rounded-lg px-5 flex items-center opacity-40 left-18 md:left-32 pt-10 md:pt-0">
+
+                        <!-- Img  -->
+                        <div class="absolute -top-5 -left-5 bg-white rounded-full p-1">
+
+                            <img src="./images/client.png" alt="">
+
+                        </div>
+
+
+                        <!-- Box Content -->
+
+                        <div class="text-gray-500">
+
+                            <p class="mb-5">
+                                We are providing the best and suitable home insurance services for the people who are
+                                interested to treatment
+                            </p>
+
+                            <h1 class="font-bold">
+                                Ilham Yuda
+                            </h1>
+
+                            <small class="font-bold">
+                                Businessman
+                            </small>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <!-- Bottom Card -->
+
+
+                    <div
+                        class="relative mt-10 h-56 w-4/5 md:w-3/4 bg-white text-black rounded-lg px-5 flex items-center opacity-40 left-18 md:32 pt-10 md:pt-0">
+
+                        <!-- Img  -->
+                        <div class="absolute -top-5 -left-5 bg-white rounded-full p-1">
+
+                            <img src="./images/client.png" alt="">
+
+                        </div>
+
+
+                        <!-- Box Content -->
+
+                        <div class="text-gray-500">
+
+                            <p class="mb-5">
+                                We are providing the best and suitable home insurance services for the people who are
+                                interested to treatment
+                            </p>
+
+                            <h1 class="font-bold">
+                                Ilham Yuda
+                            </h1>
+
+                            <small class="font-bold">
+                                Businessman
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
 
                 </div>
-
-
-
-              </div>
-
-
-            <!-- Top Card -->
-            <div class="relative h-56 w-4/5 md:w-3/4 bg-white text-black rounded-lg px-5 flex items-center opacity-40 left-18 md:left-32 pt-10 md:pt-0"
-            >
-
-                <!-- Img  -->
-                <div class="absolute -top-5 -left-5 bg-white rounded-full p-1"
-                >
-
-                    <img src="./images/client.png" alt="">
-
-                </div>
-
-
-                <!-- Box Content -->
-
-                <div class="text-gray-500"
-                >
-
-                    <p class="mb-5"
-                    >
-                        We are providing the best and suitable home insurance services for the people who are interested to treatment
-                    </p>
-
-                    <h1 class="font-bold"
-                    >
-                        Ilham Yuda
-                    </h1>
-
-                    <small class="font-bold">
-                        Businessman
-                    </small>
-
-                </div>
-
-
-
-              </div>
-
-
-            <!-- Bottom Card -->
-
-
-            <div class="relative mt-10 h-56 w-4/5 md:w-3/4 bg-white text-black rounded-lg px-5 flex items-center opacity-40 left-18 md:32 pt-10 md:pt-0"
-            >
-
-                <!-- Img  -->
-                <div class="absolute -top-5 -left-5 bg-white rounded-full p-1"
-                >
-
-                    <img src="./images/client.png" alt="">
-
-                </div>
-
-
-                <!-- Box Content -->
-
-                <div class="text-gray-500"
-                >
-
-                    <p class="mb-5"
-                    >
-                        We are providing the best and suitable home insurance services for the people who are interested to treatment
-                    </p>
-
-                    <h1 class="font-bold"
-                    >
-                        Ilham Yuda
-                    </h1>
-
-                    <small class="font-bold">
-                        Businessman
-                    </small>
-
-                </div>
-
-              </div>
-
-
-
-
-              </div>
 
             </div>
 
@@ -427,7 +427,8 @@
 
                         <h4>Ready to get started</h4>
 
-                        <button class="bg-linear-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white font-bold text-xl">
+                        <button
+                            class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white font-bold text-xl">
                             Get Started
                         </button>
 
@@ -450,7 +451,7 @@
                         </h3>
 
                         <ul class="space-y-2">
-                            
+
                             <li>
                                 <a href="#" class="hover:text-orange-600">
                                     Home
@@ -475,7 +476,7 @@
                                 </a>
                             </li>
 
-                            
+
 
                         </ul>
 
@@ -494,7 +495,7 @@
                         </h3>
 
                         <ul class="space-y-2">
-                            
+
                             <li>
                                 <a href="#" class="hover:text-orange-600">
                                     Life Insurance
@@ -519,7 +520,7 @@
                                 </a>
                             </li>
 
-                            
+
 
                         </ul>
 
@@ -537,7 +538,7 @@
                         </h3>
 
                         <ul class="space-y-2">
-                            
+
                             <li>
                                 <a href="#" class="hover:text-orange-600">
                                     Home
@@ -550,9 +551,9 @@
                                 </a>
                             </li>
 
-                            
 
-                            
+
+
 
                         </ul>
 
@@ -573,7 +574,8 @@
                         <div class="">
 
                             <div class="flex">
-                                <input type="text" name="" id="" placeholder="Email Address" class="bg-transparent border-b-2 border-black w-4/6">
+                                <input type="text" name="" id="" placeholder="Email Address"
+                                    class="bg-transparent border-b-2 border-black w-4/6">
 
                                 <div class="flex items-center justify-center w-7 h-7 bg-orange-600 rounded-full">
                                     <i class="fa-solid fa-chevron-right text-white"></i>
@@ -593,8 +595,8 @@
                     </div>
 
 
-                    
-                    
+
+
 
 
                 </div>
@@ -606,7 +608,7 @@
             <div class="text-center text-gray-600 pt-4 mt-4">
                 <small>2027 UIDesign.to - All rights reserved.</small>
             </div>
-            
+
 
         </div>
 
