@@ -4,7 +4,6 @@ const inputPinNumber = document.getElementById('input-pin-number');
 
 const addMoneyBtn = document.getElementById('btn-add-money');
 
-const cashOutBtn = document.getElementById('btn-show-cash-out');
 
 const accountBalance = document.getElementById('account-balance');
 
@@ -53,37 +52,6 @@ addMoneyBtn.addEventListener('click', function (event) {
 
 });
 
-
-
-
-cashOutBtn.addEventListener('click', function (event) {
-
-    event.preventDefault();
-
-     // Value get from input field;
-
-     const valueAddMoney = parseFloat(inputAddMoney.value);
-     const valuePinNumber = inputPinNumber.value;
- 
-     // Convert Account value value to double
-     let accountBalanceValue = parseFloat(accountBalance.innerText);
- 
-     // console.log(accountBalanceValue);
-     // console.log(typeof accountBalanceValue);
-
-     
-
-     if(valuePinNumber === '12345')
-     {
-        if(valueAddMoney <= (accountBalanceValue -500) )
-        {
-            const newBalance = accountBalanceValue - valueAddMoney;
-            accountBalanceValue = newBalance;
-            accountBalance.innerText = accountBalanceValue;
-        }
-     }
-
-});
 
 
 
