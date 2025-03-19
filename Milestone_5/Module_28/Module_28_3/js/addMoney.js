@@ -30,9 +30,14 @@ addMoneyBtn.addEventListener('click', function(event){
 
     const pinNumber = getInputFieldValueByID('input-pin');
 
+    if(isNaN(addMoney)){
+        alert("Not a Valid amount for Deposit . Please try Again");
+        return;
+    }
 
-    console.log("Deposite Amount", addMoney);
-    console.log("Pin Number", pinNumber);
+
+    // console.log("Deposite Amount", addMoney);
+    // console.log("Pin Number", pinNumber);
 
     if(pinNumber === 12345)
     {
@@ -42,6 +47,16 @@ addMoneyBtn.addEventListener('click', function(event){
         {
             const totalBalance = addMoney + balance;
             document.getElementById('account-balance').innerText = totalBalance;
+
+            alert(`${addMoney} tk Added`);
+
+            const p = document.createElement('p');
+
+            p.innerText = `Added : ${addMoney} TK. and After adding money total amount is : ${totalBalance}`;
+
+            document.getElementById('transaction-container').appendChild(p);
+
+
         }
         else{
             console.log("You can only add 50000 only at a time");

@@ -32,3 +32,15 @@ function getTextFieldValueById(id)
 
     return textNumber;
 }
+
+function showSectionByID(id)
+{
+    document.getElementById('add-money-form').classList.add('hidden');
+
+    document.getElementById('cash-out-form').classList.add('hidden');
+
+    document.getElementById('transaction-section').classList.add('hidden');
+
+    // remove hidden from targeted element
+    document.getElementById(id).classList.remove('hidden');
+}
