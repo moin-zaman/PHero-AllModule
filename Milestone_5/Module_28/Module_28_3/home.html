@@ -43,11 +43,13 @@
 
                     <!-- Features Button -->
 
-                    <div class="flex">
+                    <div class="grid grid-cols-2 gap-4">
 
-                        <button id="btn-show-add-amount" class="btn btn-xl">Add Amount</button>
+                        <button id="btn-show-add-amount-form" class="btn btn-xl">Add Amount</button>
 
-                        <button id="btn-show-cash-out" class="btn btn-xl">CashOut</button>
+                        <button id="btn-show-cash-out-form" class="btn btn-xl">CashOut</button>
+
+                        <button id="btn-show-transactions-form" class="btn btn-xl">Transactions</button>
 
                     </div>
 
@@ -60,7 +62,7 @@
 
                     <!-- Add money Form start -->
 
-                    <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box hidden ">
+                    <fieldset id="add-money-form" class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
                         <legend class="fieldset-legend">Savings</legend>
                         
                         <label class="fieldset-label">Amount</label>
@@ -76,7 +78,7 @@
 
                     <!-- Cash Out Start Form -->
 
-                    <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
+                    <fieldset id="cash-out-form" class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box hidden">
                         <legend class="fieldset-legend">Cash Out</legend>
                         
                         <label class="fieldset-label">Cash Out Amount</label>
@@ -91,6 +93,16 @@
                     <!-- Cash out End Form -->
 
 
+                    <!-- transaction start -->
+                    <div id="transaction-section" class="hidden">
+                        <h2 class="text-3xl text-center">Transaction History</h2>
+                        <div id="transaction-container" class="space-y-3">
+
+                        </div>
+                     </div>
+                     <!-- transaction End -->
+
+
 
         </div>
 
@@ -99,6 +111,7 @@
     <script src="./js/utilities.js"></script>
     <script src="./js/addMoney.js"></script>
     <script src="./js/cashOut.js"></script>
+    <script src="./js/features.js"></script>
 
 </body>
 
