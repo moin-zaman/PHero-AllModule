@@ -17,6 +17,18 @@
 
 function getInputFieldValueByID(id)
 {
-    const inputFieldValue = document.getElementById(id).value;
-    return inputFieldValue;
+    const inputValue = document.getElementById(id).value;
+    const inputNumber = parseFloat(inputValue);
+
+    // console.log(id, inputNumber, inputFieldValue);
+
+    return inputNumber;
+}
+
+function getTextFieldValueById(id)
+{
+    const textValue = document.getElementById(id).innerText;
+    const textNumber = parseFloat(textValue);
+
+    return textNumber;
 }
