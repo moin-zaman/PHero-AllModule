@@ -17,7 +17,7 @@
 
     <main class="flex justify-center items-center min-h-screen bg-gray-100">
 
-        <div class="mockup-phone border-primary bg-white h-150 w-100 flex flex-col items-center justify-center border rounded-lg shadow-lg">
+        <div class="mockup-phone border-primary bg-white h-190 w-100 flex flex-col items-center justify-center border rounded-lg shadow-lg">
             
 
                     <div class="mockup-phone-display text-black text-2xl font-bold flex items-center justify-center h-1/2 border">
@@ -26,8 +26,8 @@
 
                             <div class="stat">
 
-                              <div id="show-amount" class="stat-value">
-                                9,400
+                              <div id="account-balance" class="stat-value">
+                                9400
                               </div>
 
                               <div class="stat-desc">
@@ -60,7 +60,7 @@
 
                     <!-- Add money Form start -->
 
-                    <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
+                    <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box hidden ">
                         <legend class="fieldset-legend">Savings</legend>
                         
                         <label class="fieldset-label">Amount</label>
@@ -74,6 +74,22 @@
 
                     <!-- Add money Fort end -->
 
+                    <!-- Cash Out Start Form -->
+
+                    <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
+                        <legend class="fieldset-legend">Cash Out</legend>
+                        
+                        <label class="fieldset-label">Cash Out Amount</label>
+                        <input id="input-cash-out-amount" type="text" class="input" placeholder="Cash Out Amount" />
+                        
+                        <label class="fieldset-label">Pin</label>
+                        <input id="input-cash-out-pin" type="password" class="input" placeholder="Cash Out Pin" />
+                        
+                        <button id="cash-out-btn" class="btn btn-neutral mt-4">Cash Out</button>
+                    </fieldset>
+
+                    <!-- Cash out End Form -->
+
 
 
         </div>
@@ -82,6 +98,7 @@
 
     <script src="./js/utilities.js"></script>
     <script src="./js/addMoney.js"></script>
+    <script src="./js/cashOut.js"></script>
 
 </body>
 
