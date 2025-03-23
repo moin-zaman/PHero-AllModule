@@ -38,3 +38,14 @@ const add2 = function(a, b){
 
 // arrow function 
 const add4 = (num1, num2, num3, num4) => num1 + num2 + num3 + num4;
+
+
+30_5 -->
+
+In arrow function if we have 1 parameter we can use () this bracket and this is not mandatory. 
+ex: const getAge = (person) => person.age; or  const getThird = numbers => numbers[2];
+
+for no parameter : const getPI = () => Math.PI 
+
+// large arrow function. if you want to get anything returned from this function. then we have to use the return keyword ;
+If we return something by writing return keyword then it is called explicit return and if some functions return something without explicitly writing return keyword then it is called implicit return 
