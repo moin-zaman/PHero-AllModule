@@ -102,3 +102,19 @@ console.log(shortGlass);
 Object.seal(glass);  // It will only allow the update of property value
 
 
+
+30_9 -->
+
+access of objects property and value using for .. in loop and for .. of loop
+
+Spread Operator (...) in objects --> 
+let {x, y ,  ...z} =  {x: 1, y: 2, a: 3, b: 4, c: 5};
+
+join of 2 array -->
+
+const fruits = ['apple', 'banana', 'ornage'];
+const veg = ['grape'];
+const fruitsVeg = [...fruits, ...veg];
+
+
+
