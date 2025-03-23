@@ -61,3 +61,5 @@ const dosto = [...friends1, 100] // here  100 will be added as an extra element 
 
 const dosto1  = [friends1] here all elements well be added as an single element like this :
 [ [2,10,20,30] ]
+
+const num = [5, 6 , ...numbers, 6, 7]; we can also do this
