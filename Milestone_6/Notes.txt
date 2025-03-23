@@ -49,3 +49,15 @@ for no parameter : const getPI = () => Math.PI
 
 // large arrow function. if you want to get anything returned from this function. then we have to use the return keyword ;
 If we return something by writing return keyword then it is called explicit return and if some functions return something without explicitly writing return keyword then it is called implicit return 
+
+
+30_6 -->
+
+Spread operator (...) these dots are called spread operator. 
+If we want to copy array element with passing the reference then we have to use spread operator
+const friends1 = [2, 10, 20, 30];
+//const dosto = [...friends1]; 
+const dosto = [...friends1, 100] // here  100 will be added as an extra element .. we can do this also
+
+const dosto1  = [friends1] here all elements well be added as an single element like this :
+[ [2,10,20,30] ]
