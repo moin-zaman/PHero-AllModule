@@ -22,3 +22,19 @@ here we will use (``) backtick instead of single '' of double quotes ""
 benefits of backtick ``:
 I) multi-line strings
 2) string interpolation ex:  console.log(`The sum of ${numbers[0]} and ${student.age} is ${numbers[0] + student.age}`); ${numbers[0]},  ${numbers[0] + student.age} these things are called string interpolation
+
+
+30_4 -->
+
+This is called function declaration
+function add(a,b){
+return a+b;
+}
+
+// function expression 
+const add2 = function(a, b){
+    return a + b;
+}
+
+// arrow function 
+const add4 = (num1, num2, num3, num4) => num1 + num2 + num3 + num4;
