@@ -63,3 +63,24 @@ const dosto1  = [friends1] here all elements well be added as an single element 
 [ [2,10,20,30] ]
 
 const num = [5, 6 , ...numbers, 6, 7]; we can also do this
+
+
+
+30_7 -->
+
+Destructuring --> A technique for unpacking object, arrays and assigning them to  variables and deals with lot of parameters and default values. Saves from writing repetitive code
+
+const {money, age} = actor; // here actor object's money and age property's value assign to money and age variable. 
+we can change the name of the variable ex: const {phone : mobileNumber} = actor;
+
+Array Destructuring:
+const [first, second] = numbers;
+const [x, y] = [12, 66];
+console.log(first, second);
+console.log(x, y);
+
+// Rest Operator
+let [n1, ...n2] = [1,2, 5, 6,8];
+console.log(n1, n2);
+
+
