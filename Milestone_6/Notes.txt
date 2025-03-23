@@ -84,3 +84,21 @@ let [n1, ...n2] = [1,2, 5, 6,8];
 console.log(n1, n2);
 
 
+30_8 -->
+
+Access the property and values of Objects
+using Object.keys(glass) and Object.values(glass);
+
+Object.entries(glass); it will return an array as a pair of property value
+
+delete glass.isCleaned; // It will delete the object property.
+
+another way  of delete object propert -->
+const {isCleaned, ...shortGlass} = glass;
+console.log(shortGlass);
+
+// freeze 
+// Object.freeze(glass); // It will not allow delete, update, add to object ;
+Object.seal(glass);  // It will only allow the update of property value
+
+
