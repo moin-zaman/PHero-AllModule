@@ -1,0 +1,120 @@
+30_1 --> 
+
+const arr = [2, 5, 6];  Here we can not change the whole array like arr = [3, 5,7] but we can modify individual element like arr[1] = 6; arr[2] = 9;
+
+same goes for object const s1 = { name: "Moin", age: 25} s1 = {name:" tansen", age: 21}(not allowed) but s1.name = "Khan", s1.age = 28 ( allowed)
+
+
+30_2 --> 
+
+function add(num1 = 99, num2 = 0){
+    const result = num1 + num2 ;
+    console.log(num1, num2, result);
+    return  result;
+}
+add(); here if you don't pass any argument it will set the default value into the parameter
+like num1 = 99 and num2 = 0;
+
+
+30_3 -->
+
+here we will use (``) backtick instead of single '' of double quotes "" 
+benefits of backtick ``:
+I) multi-line strings
+2) string interpolation ex:  console.log(`The sum of ${numbers[0]} and ${student.age} is ${numbers[0] + student.age}`); ${numbers[0]},  ${numbers[0] + student.age} these things are called string interpolation
+
+
+30_4 -->
+
+This is called function declaration
+function add(a,b){
+return a+b;
+}
+
+// function expression 
+const add2 = function(a, b){
+    return a + b;
+}
+
+// arrow function 
+const add4 = (num1, num2, num3, num4) => num1 + num2 + num3 + num4;
+
+
+30_5 -->
+
+In arrow function if we have 1 parameter we can use () this bracket and this is not mandatory. 
+ex: const getAge = (person) => person.age; or  const getThird = numbers => numbers[2];
+
+for no parameter : const getPI = () => Math.PI 
+
+// large arrow function. if you want to get anything returned from this function. then we have to use the return keyword ;
+If we return something by writing return keyword then it is called explicit return and if some functions return something without explicitly writing return keyword then it is called implicit return 
+
+
+30_6 -->
+
+Spread operator (...) these dots are called spread operator. 
+If we want to copy array element with passing the reference then we have to use spread operator
+const friends1 = [2, 10, 20, 30];
+//const dosto = [...friends1]; 
+const dosto = [...friends1, 100] // here  100 will be added as an extra element .. we can do this also
+
+const dosto1  = [friends1] here all elements well be added as an single element like this :
+[ [2,10,20,30] ]
+
+const num = [5, 6 , ...numbers, 6, 7]; we can also do this
+
+
+
+30_7 -->
+
+Destructuring --> A technique for unpacking object, arrays and assigning them to  variables and deals with lot of parameters and default values. Saves from writing repetitive code
+
+const {money, age} = actor; // here actor object's money and age property's value assign to money and age variable. 
+we can change the name of the variable ex: const {phone : mobileNumber} = actor;
+
+Array Destructuring:
+const [first, second] = numbers;
+const [x, y] = [12, 66];
+console.log(first, second);
+console.log(x, y);
+
+// Rest Operator
+let [n1, ...n2] = [1,2, 5, 6,8];
+console.log(n1, n2);
+
+
+30_8 -->
+
+Access the property and values of Objects
+using Object.keys(glass) and Object.values(glass);
+
+Object.entries(glass); it will return an array as a pair of property value
+
+delete glass.isCleaned; // It will delete the object property.
+
+another way  of delete object propert -->
+const {isCleaned, ...shortGlass} = glass;
+console.log(shortGlass);
+
+// freeze 
+// Object.freeze(glass); // It will not allow delete, update, add to object ;
+Object.seal(glass);  // It will only allow the update of property value
+
+
+
+30_9 -->
+
+access of objects property and value using for .. in loop and for .. of loop
+
+Spread Operator (...) in objects --> 
+let {x, y ,  ...z} =  {x: 1, y: 2, a: 3, b: 4, c: 5};
+
+join of 2 array -->
+
+const fruits = ['apple', 'banana', 'ornage'];
+const veg = ['grape'];
+const fruitsVeg = [...fruits, ...veg];
+
+
+
