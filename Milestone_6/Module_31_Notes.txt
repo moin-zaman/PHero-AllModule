@@ -1,0 +1,28 @@
+31_1 --> 
+Recap of basic ES6
+
+
+31_2 --> 
+i) Here we saw some Nested object or object element of an Array and How we access them .
+
+ii) Optional Chaining 
+
+// ? by using this qustion mark we want to tell that if stree property has a value then will go to the next otherwise undefined . and It is called optional chaining
+
+console.log(user.address['street']?.second);
+console.log(user2.address['street']?.second); 
+
+
+30_3 -->
+
+এখানে যেই array এর উপর map() function টা use করা হবে সেই array  এর প্রত্যেকটা element এর উপর map এ যেই call back function টা call করা হবে তার operation গুলা array এর প্রত্যেকটা উপাদানের উপর চালানো হবে এবং প্রত্যেকটা element এর result hold করে রাখা হবে একটা implicit array এর মধ্যে । তারপর সবশেষে সেই resultant array টা return করে দেওয়া হবে।
+
+ex:
+const numbers = [4, 5, 2, 8, 10];
+i)const double2 = n => n * 2;
+ii)const output2 = numbers.map(double2);
+iii)const output3 = numbers.map(n => n * 2);
+const friends = ['Tom', 'John', 'Micheal', 'Oliver'];
+iv)const lengths = friends.map(friend => friend.length);
+v)const firstLetter = friends.map(friend => friend[0]);
+
