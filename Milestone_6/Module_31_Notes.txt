@@ -26,3 +26,17 @@ const friends = ['Tom', 'John', 'Micheal', 'Oliver'];
 iv)const lengths = friends.map(friend => friend.length);
 v)const firstLetter = friends.map(friend => friend[0]);
 
+
+30_4 -->
+
+i)forEach works like map ..but it returns nothing
+ii) // filter selects elements based on a condition and returns an array with the elements that fulfilled the condition.
+
+const selected = players.filter(p => p % 2 === 1);
+console.log(selected);
+
+filter will return an empty array [] if there is no element based on the condition
+
+iii) find()  will return an only element if it finds based on the condition .. if it finds multiple elements based on the condition it will return only the first element . if it doesnt find any element then it will return undefined.
+
+
