@@ -1,0 +1,34 @@
+একটা array/object থেকে multiple ডাটা extract করে আনা কে destructuring বলে।
+array destructuring এ sequence maintain করতে হবে ।
+
+object destructuringঃ
+cosnt obj = {
+    shroom: "mashroom",
+    banana: "kola",
+    pepper: "morich"
+}
+
+const{banana, shroom, pepper} = obj;
+
+property এর নাম একই থাকতে হবে
+const{firstName, age} = details;
+
+
+----> Spread Operator ---->
+
+Spread Operator ব্যবহার করে আমরা array/object এর element গুলোকে access করে কিছু কাজ করতে পারিঃ
+
+১) একটা array/object এর element কপি করে অন্য array/object তে রাখতে পারি
+২) দুইটা array কে জোড়া লাগাতে পারি।
+৩) দুইটা object কে জোড়া লাগাতে পারি
+
+const circle = {radius: 19};
+const style = {background: 'red'};
+
+const solidCircle = {
+    ...circle,
+    ...style
+};
+
+৪) একটা array থেকে highest value and lowest value বের করতে পারি
+৫) একটা array/object এর মান বাদ দিয়ে অন্য গুলো Destructure করতে পারি
