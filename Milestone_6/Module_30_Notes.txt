@@ -50,6 +50,13 @@ for no parameter : const getPI = () => Math.PI
 // large arrow function. if you want to get anything returned from this function. then we have to use the return keyword ;
 If we return something by writing return keyword then it is called explicit return and if some functions return something without explicitly writing return keyword then it is called implicit return 
 
+example:
+document.getElementById("title").addEventListener("click",
+    () => {
+    console.log("hello")
+    }
+)
+
 
 30_6 -->
 
@@ -82,6 +89,13 @@ console.log(x, y);
 // Rest Operator
 let [n1, ...n2] = [1,2, 5, 6,8];
 console.log(n1, n2);
+
+Example:
+const person = ["hero alom",{name:"gias"}, "hena", "bapparaj"];
+// const [nayok,obj] = person;
+// console.log(obj)
+const [test,obj,name,sadNayok] = person;
+console.log(sadNayok)
 
 
 30_8 -->
