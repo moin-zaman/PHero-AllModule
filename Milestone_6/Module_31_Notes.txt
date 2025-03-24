@@ -40,3 +40,10 @@ filter will return an empty array [] if there is no element based on the conditi
 iii) find()  will return an only element if it finds based on the condition .. if it finds multiple elements based on the condition it will return only the first element . if it doesnt find any element then it will return undefined.
 
 
+31_5 -->
+reduce() method 
+const numbers = [4, 5, 7, 1, 2, 66];
+const total = numbers.reduce((previous, current) => previous + current , 0);
+console.log(total);
+
+
