@@ -18,6 +18,10 @@ console.log(values);
 const entries = Object.entries(glass);
 console.log(entries);
 
+for (let [key,value] of Object.entries(glass)) {
+    console.log(` key : ${key} value : ${value}`)
+}
+
 // It will return a two dimensional array
 
 // delete glass.isCleaned;
