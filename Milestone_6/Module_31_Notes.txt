@@ -46,4 +46,77 @@ const numbers = [4, 5, 7, 1, 2, 66];
 const total = numbers.reduce((previous, current) => previous + current , 0);
 console.log(total);
 
+31_6 -->
 
+Basic Class
+
+31_7 -->
+
+Inheritance
+
+and prototype 
+__proto__:Object
+
+prototypal Inheritance
+Object prototype:
+i) hasOwnProperty()
+ii) isprotoTypeOf()
+iii) constructor()
+iv) toString()
+
+
+31_8 -->
+Class and Dot Notation and Bracket Notation ( Slightly Important)
+const person = {
+    name: 'kodom ali', 
+    job: 'badam khai',
+    3:'third',
+    'add-dress': 'kochu khet'
+}
+const prop = 'job'
+console.log(person.job)
+console.log(person['job'])
+console.log(person[prop])
+console.log(person['3'])
+confirm.log(person["add-dress"])
+
+
+Passing_Function.js (Important)
+pass a function as an argument 
+3 ways :
+1) Passing a Function as an Argument
+2) Passing Anonymous Function
+3) Passing an Arrow Function
+
+
+31_9 -->
+এইগুলা শিখার জন্য --> Chrome dev toop console api লিখে সার্চ দিতে হবে
+Chrome devtool Console tab
+const num = 555;
+num * num
+Math.sqrt($_); // it will sqrt the num value.console এ কাজ করবে শুধু 
+$('#account-balance') . id টা দিয়ে দিবে
+--> settings এ গিয়ে  preserve log select
+--> clear()
+--> ctrl + l
+--> monitor(function name) function কখন call হবে সেইটা বলে দিবে
+
+--> unmonitor(function name)
+--> document.body.contentEditable = true;
+এইটা যেকোনো website এর টেক্সট গুলা কে এডিট করার জন্য allow করে।
+
+-->console.time('loop')
+for(let i = 0; i < 1000000000; i++)
+{
+    2*2+2*88888;
+}
+console.timeEnd('loop')
+performance measure করার জন্য কতো সময় লাগছে তা দেখার জন্য ব্যাবহার করা হয়
+
+--> const friends = [{a: 2, b: 3}, {a: 2, b: 3, d: 5}, {a: 2, b: 3}, {a: 2, b: 3, d: 5}]
+console.table(friends);
+
+
+31_10 -->
+types of error:
+i) Syntax error ii) Type Error iii) Reference Error
