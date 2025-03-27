@@ -17,3 +17,22 @@ let q = p; // এখানে q কেও p যেখানে create হয়ে�
 q = {job: "Web Designer}; কিন্তু এখানে q কে reassign করার পর q নতুন আরেকটা memory address কে reffer করতেছে
 q.job = 'front end developer'; // কিন্তু এখানে আবার p এর memory  address কেই reffer করে কিন্তু reassign করলে নতুন আরেক memory address কে reffer করে
 console.log(p, q);
+
+
+32 -->
+আমরা যদি কোনো একটা variable এর value নাই এইটা set করতে যাই তাহলে বলবে যে null not undefined.
+ex: const num = null ;
+not 
+const num = undefined;
+
+/* 
+ 8 ways to get Undefine
+1. variable that is not initialized will give undefined
+2. function with no return 
+3. parameter that is not passed will be undefined
+4. if return has nothing on the right side will return undefined
+5. property that doesn't exists on an object will give you undefined
+6. accessing array elements outside of the index range 
+7. deleting an element inside an array
+8. set a value directly to undefined
+*/
