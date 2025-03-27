@@ -1,0 +1,19 @@
+32_1 -->
+
+Javascript is a Dynamic type language
+
+Primitive Type: যেই variable গুলা একটিমাত্র value রাখতে পারে সেটি হছে Primitive Type .
+const a = 5;
+const b = 'Samsu kopai na ekhon ar';
+const d = true;
+
+
+Non-Primitive Type: যেই variable গুলা multiple value রাখতে পারে সেটি হছে Non-Primitive Type .
+const ages = [45, 65, 48];
+const student = {id: 23, class: 7};
+
+let p = {job: 'web developer'}
+let q = p; // এখানে q কেও p যেখানে create হয়েছে সেই memory address কেই reffer করতেছে ।
+q = {job: "Web Designer}; কিন্তু এখানে q কে reassign করার পর q নতুন আরেকটা memory address কে reffer করতেছে
+q.job = 'front end developer'; // কিন্তু এখানে আবার p এর memory  address কেই reffer করে কিন্তু reassign করলে নতুন আরেক memory address কে reffer করে
+console.log(p, q);
