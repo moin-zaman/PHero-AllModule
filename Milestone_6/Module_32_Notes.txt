@@ -36,3 +36,31 @@ const num = undefined;
 7. deleting an element inside an array
 8. set a value directly to undefined
 */
+
+
+32_3 -->
+
+
+/* 
+Truthy:
+1. true
+2. any number (+ve, -ve) will be truthy other than 0
+3. any string other than empty string
+4. '0', 'false'
+5. {}
+6. []
+
+
+Falsy:
+1. false
+2. 0
+3. '' (empty string)
+4. undefined
+5. null
+*/
+
+const x = false;
+if(x) এখানে x , true ই হয়  by default
+তাই if(!x) মানে false যা condition এর সাথে match করতাছে so condition is true 
+কিন্তু y = true;
+if(!!y) এখানে y, true... কারণ  !!(y = true) === !(false) === true
