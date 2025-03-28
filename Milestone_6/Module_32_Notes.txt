@@ -84,3 +84,12 @@ var variable অর function কে hoisting or (উপরে উঠাইয়া
 
 একটা function এর ভিতর থেকে যখন আরেকটা 
 function revoke করা হয় তখন ঐ ভিতরের function টা একটা closure create করে । 
+
+
+32 --> function কে argument হিসেবে pass করলে তারপর ঐ function argument কে function এর ভিতর থেকে call করলে তাকে বলা হয় call back function ।
+
+function calculator(a, b, operation){
+    return operation(a, b);
+}
+const add = (a, b) => a + b;
+console.log(calculator(5, 7, add));
