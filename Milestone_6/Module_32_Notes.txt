@@ -75,6 +75,7 @@ Here when we compare two array or two objcets they compare their reference numbe
 
 
 32_5 -->
+global scope and block scope.
 
 var variable অর function কে hoisting or (উপরে উঠাইয়া ফেলে)
 কিন্তু function expression variable কে hoisting করে কিন্তু anonymus function কে hoisting করে নাহ। তাই ওই variable এর value হয়ে যায় undefined আর undefined কে function হিসেবে use করা যায় নাহ।
@@ -86,7 +87,7 @@ var variable অর function কে hoisting or (উপরে উঠাইয়া
 function revoke করা হয় তখন ঐ ভিতরের function টা একটা closure create করে । 
 
 
-32 --> function কে argument হিসেবে pass করলে তারপর ঐ function argument কে function এর ভিতর থেকে call করলে তাকে বলা হয় call back function ।
+32_7 --> function কে argument হিসেবে pass করলে তারপর ঐ function argument কে function এর ভিতর থেকে call করলে তাকে বলা হয় call back function ।
 
 function calculator(a, b, operation){
     return operation(a, b);
@@ -101,3 +102,13 @@ console.log(calculator(5, 7, add));
 When we pass an argument of primitive type it passes a copy of the value but 
 when we pass an argument of non-primitive type it passes a reference rathen a value . so if we change the value of reference argument it also cahnge the value from actual non-primitive variable.
 
+
+*আমরা যখন চাই যে, ফাংশনের কাজ আসল ডাটা পরিবর্তন করবে না, তখন পাস বাই ভ্যালু ব্যবহার করুন ।
+
+*আমরা যখন চাই যে, ফাংশনের পরিবর্তন আসল অব্জেক্টে প্রতিফলিত করতে তখন পাস বাই রেফারেন্স ব্যাবহার করবো ।
+
+
+32_9 -->
+
+1. Debug(Some notes in the video)
+2. Money_master folder
