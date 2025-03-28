@@ -102,6 +102,8 @@ console.log(calculator(5, 7, add));
 When we pass an argument of primitive type it passes a copy of the value but 
 when we pass an argument of non-primitive type it passes a reference rathen a value . so if we change the value of reference argument it also cahnge the value from actual non-primitive variable.
 
+argument is a array like object
+
 
 *আমরা যখন চাই যে, ফাংশনের কাজ আসল ডাটা পরিবর্তন করবে না, তখন পাস বাই ভ্যালু ব্যবহার করুন ।
 
@@ -112,3 +114,7 @@ when we pass an argument of non-primitive type it passes a reference rathen a va
 
 1. Debug(Some notes in the video)
 2. Money_master folder
+
+ctrl + f দিলে শুধু একটা ফাইলে খুজবে কিন্তু ctrl + shift + f দিলে যতো ফাইলে আছে সব ফাইলে খুজবে
+
+ctrl + o দিয়া একটা জিনিস খোজা যায় console এর ভিতরে
