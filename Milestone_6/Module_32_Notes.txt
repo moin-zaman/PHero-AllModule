@@ -93,3 +93,11 @@ function calculator(a, b, operation){
 }
 const add = (a, b) => a + b;
 console.log(calculator(5, 7, add));
+
+
+
+32_8 --> 
+
+When we pass an argument of primitive type it passes a copy of the value but 
+when we pass an argument of non-primitive type it passes a reference rathen a value . so if we change the value of reference argument it also cahnge the value from actual non-primitive variable.
+
