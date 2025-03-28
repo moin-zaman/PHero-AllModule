@@ -78,3 +78,9 @@ Here when we compare two array or two objcets they compare their reference numbe
 
 var variable অর function কে hoisting or (উপরে উঠাইয়া ফেলে)
 কিন্তু function expression variable কে hoisting করে কিন্তু anonymus function কে hoisting করে নাহ। তাই ওই variable এর value হয়ে যায় undefined আর undefined কে function হিসেবে use করা যায় নাহ।
+
+
+32_6 --> 
+
+একটা function এর ভিতর থেকে যখন আরেকটা 
+function revoke করা হয় তখন ঐ ভিতরের function টা একটা closure create করে । 
