@@ -64,3 +64,10 @@ if(x) এখানে x , true ই হয়  by default
 তাই if(!x) মানে false যা condition এর সাথে match করতাছে so condition is true 
 কিন্তু y = true;
 if(!!y) এখানে y, true... কারণ  !!(y = true) === !(false) === true
+
+
+32_4 -->
+
+Here when we compare two array or two objcets they compare their reference number not value or type.
+
+== equal দিয়ে check করার সময় value গুলা কে type coersion(conversion) করে
