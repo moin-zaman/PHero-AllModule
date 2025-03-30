@@ -1,0 +1,20 @@
+33_1 -->
+
+DNS -: DOmain Name System
+Http: Hyper text transfer protocol
+Https: Hyper text transfer protocol secure
+
+
+API - Application Programming Interface
+
+Suppose you use a travel booking website to search for flights.
+The website doesn’t store flight data; instead, it uses an API to communicate with airline databases.
+The API sends a request to the airline’s system and retrieves flight details, which are then displayed on the booking website.
+
+
+33_2 -->
+কোনো ক্লায়েন্ট যখন রিকোয়েস্ট পাঠায় তখন সেই রিকোয়েস্ট সার্ভারে যাওয়ার পরে সার্ভার কোনো একটা ডেটাবেজ থেকে ডেটা নিয়ে এসে সার্ভার ঐ ডেটাগুলোকে প্লেইন টেক্সট আকারে অর বিভিন্ন স্ট্রাকচার্ড ফর্মেটে যেমন ঃ xml or json format এ Data গুলোকে ক্লায়েন্ট কে দেয় . Data গুলা সরাসরি অব্জেক্ট আকারে পাঠাতে পারে নাহ টেক্সট আকারে পাঠাতে হয় । আর এইগুলা manage করার জন্য JavaScript Object Notation (JSON) ব্যাবহার করা হয় ।
+
+JSON.strginfy(shop) : js এর যেকোনো value json string এ convert করে return করে
+
+JSON.parse(stringified) : JSON string কে js object এ কনভার্ট করে।
