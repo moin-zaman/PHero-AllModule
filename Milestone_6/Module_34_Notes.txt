@@ -1,0 +1,36 @@
+34_0 -->
+Javascript is a highly abstracted programming language.
+
+abstracted : উপরের লেভেলের বা উপরের দিকে উঠা ।
+
+An abstraction is a way of :
+i) hiding the implementation details
+ii) showing only the functionality to the users
+
+High Abstraction in JavaScript:
+i) We don't have to handle resource management and memory allocation
+ii) We don't have to handle garbage collection
+iii) Reduces details so that developers can focus on logic better
+iv) Improves understandability as well as maintainalbjlity of the code
+
+**JavaScript collects garbage automatically**
+
+**JavaScript is a JIT compiled language**
+
+Just-In-Time (JIT)
+i) JavaScript is not a purely interpreted language.
+ii) Modern Javascript is JIT compiled
+iii) JUST-IN-TIME compiler converts the entire code into machine code and execute them immediately.
+
+js(file) -> parsing -> AST(Structured tree)->Compilation(JIT) -> Execution
+   -> optimization -> Execution
+
+**JavaScript is a multi-paradigm programming language**
+
+paradigm: code structure that will determine the style or a way of programming 
+
+1. procedural programming 2. Object Oriented Programming 3. Functional Programming
+
+** JavaScript is a Proto-Typed based programming language **
+
+** JavaScript is Dynamically typed **
