@@ -18,3 +18,44 @@ The API sends a request to the airline’s system and retrieves flight details, 
 JSON.strginfy(shop) : js এর যেকোনো value json string এ convert করে return করে
 
 JSON.parse(stringified) : JSON string কে js object এ কনভার্ট করে।
+
+
+33_3 -->
+
+json.placeholder website থেকে একটা API এর মাধ্যমে কিছু ডাটা fetch করে এনে সেগুলাকে json এর promise এ কনভার্ট kore console করে দিয়েছে
+
+const url = 'https://jsonplaceholder.typicode.com/todos/1';
+    fetch(url).then(response => response.json()).then(json => console.log(json));
+
+
+33_4 --> 
+
+Fetch API: fetch api modern Interface that allows  you to make HTTP request to severs from web bowsers
+
+33_6 --> কোনো একটা variable এর উপর double click করার পর f2 তে click করে change করলে ঐ variable যতো জায়গায় আছে সব জায়গায় change হবে 
+
+33_7 -->
+
+CRUD: 
+        CRUD is acronym for CREATE, READ, UPDATE, DELETE
+
+REST API METHODS:
+GET -): Receive information about an API resource
+POST -): Create an API resource
+PUT/PATCH -): Update an API resource
+DELETE -): Delete an API resource
+
+HTTP status code 
+
+CODE -------------------- Message
+200                         OK
+301                   Moved Permanently
+302                   Moved Temporarily
+404                      Not Found
+500                  Internal Server Error
+503                  Service Unavailable 
+
+
+33_8 --> Debug API, Network tab, Status code, headers, bad API
+
+33_9 --> async and await added 
