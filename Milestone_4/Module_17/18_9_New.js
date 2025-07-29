@@ -24,3 +24,9 @@ else
 {
     console.log("User input is : ", userInput);
 }
+
+
+let userID = 10;
+console.log(!!userID);
+console.log(!userID);
+console.log(userID);
