@@ -22,3 +22,12 @@ for(const key of num)
 
 console.log(rev_num);
 
+
+const arr= [];
+
+for(let i = 0; i < num.length ; i++)
+{
+    arr[i] = num[num.length-1 - i];
+}
+console.log(arr);    
+

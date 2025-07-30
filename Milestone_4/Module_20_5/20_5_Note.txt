@@ -1,0 +1,12 @@
+20_5_2 -->
+
+reverse() function এর মাধ্যমে array reverse করা যায় ।
+
+20_5_3 -->
+
+Way of sorting array:
+
+const num1 = [4, 15, 76, 7, 2, 20, 1];
+num1.sort(); --> It changes the original array . but it has some problem.
+
+preferred way in the code file
