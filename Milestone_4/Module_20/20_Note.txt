@@ -1,0 +1,127 @@
+20_1 -->
+
+const district = `Narsingdi`; [Backtick এর মাধ্যমে string declaration]
+
+const thana  = new String("Narsingdi Sadar"); 
+console.log(typeof (thana)); [এর type হচ্ছে object]
+[String: "Narsingdi Sadar"]
+
+*String is Immutable
+const district = `Narsingdi`;
+district[4] = 'f'; Not Possible
+
+*Array is Mutable
+
+
+20_2 -->
+
+const pani = " water";
+const w = "  water  ";
+
+const  e = pani.trim() === w.trim();
+
+trim() সামনের এবং পিছনের ফাকা অংশকে remove করে ফেলে ।
+
+pani.toLowerCase() --> pani কে modify করবে নাহ । বরং এটা নতুন আরেকটা string return করবে।
+
+
+20_3.js -->
+
+**
+const sen = "I am a good, and hardworking person";
+console.log(sen.split());
+split() text কে split করে array তে convert করে ।
+**
+
+##
+const realFriend = ['Rahim', 'kahim', 'dahim', 'Lahim', 'Fahim', 'Sahim' ];
+console.log(realFriend.join());
+
+join() array কে split করে string  এ convert করে ।
+
+##
+
+const FN = f.concat(" ").concat(l); এভাবেও concat করা যায়।
+
+
+20_5.js -->
+
+*Object key-value pair এ একাধিক information store করে । একটা key এর value একাধিক array ও object ও হতে পারে ।
+
+এখানে  key হচ্ছে value এর একটা Label.
+
+const mobile = {
+    type:'IOS',
+    model: "Iphone 16",
+    release: "2024"
+}
+
+type, model, release গুলোকে বলা হয় Property.
+
+
+20_7 -->
+
+Object এর value দুইভাবে access করা যায় ।
+i) Dot Notation
+Person.salary
+
+ii) Bracket Notation
+Person["fav places"][2]
+Person.favPerson[2]
+
+const kaaj = 'profession';
+console.log(Person[kaaj]);
+
+Object এর value modify করা যায় ।
+নতুন আরেকটা key-value set করা যায় ।
+
+
+
+20_8 -
+Nested Object -> একটা object এর value অনেকগুলা object and array ও হতে পারে ।
+Then we can access those nested obects and arrays as an property and get the values.
+
+* We can delete the property of any objects . 
+--> delete school['class']
+It will delete the property of school objects.
+
+
+20_9 -->
+
+We can apply loop in oBjects . Generally we use "for in loop" to get the properties of an object. 
+
+* We can use Object.keys(school) to get the properties as an array 
+* We can use Object.values(school) to get the values as an array
+
+
+
+Different ways of Object creation:
+
+const pen = {brand : 'Matador', price: 10, color: 'black'} this is called Object literals.
+
+const pencil = new Object("Demo");
+console.log(pencil);
+const rubber = Object.create({});
+console.log(rubber);
+
+
+#Problems sollution:
+
+*Different way to assign new values to car object:
+const car = {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2020
+};
+
+Object.assign(car, {price: 1.5, color: 'black'});
+console.log(car);
+
+** We can also add function like this
+car.greet = function(){
+    return `Hello, this car model is ${this.model}`;
+}
+
+We can find how many properties are there in an Onject:
+const items = Object.keys(car).length;
+console.log(items);
