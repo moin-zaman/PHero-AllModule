@@ -1,0 +1,13 @@
+21_1 -->
+
+function : অনেকগুলো কাজ করার জন্য , অনেকগুলো statement এর সমন্বয়ে গঠিত একটি single unit কে বলা হয় function.
+
+*function is a block of Code*
+
+i) Code resualbility
+II) Same function can perform for different type of inputs.
+
+21_4 -->
+
+function কে call করার সময় যা pass করা হয় তাকে বলা হয় argument.
+function যা দিয়ে argument receive করে তাকে বলয়া হয় parameter.
