@@ -101,6 +101,13 @@ if( leader) --> Is leader == true ---> result is "false"
 ** !!true = true
 !!false = false
 
+let word = "Hello"
+!!word = Is word empty or something অথবা  Is word has value or not. but value is there so the result is "truthy"
+let s = ""
+!!s = Is 's' empty or something অথবা  Is 's' has value or not. but value is not there so the result is "falsie"
+let s = ""
+
+
 **************
 let userID = 10;
 console.log(!!userID)
