@@ -1,0 +1,60 @@
+22_1 -->
+
+variable এর value অনেক কিছু হতে পারে ঃ
+
+primitive type
+i) Number
+ii) string
+ii) boolean
+iii) null
+iv) undefined
+
+Non-Primitive type
+v) array
+vi) object
+
+
+22_2 -->
+
+Conversion Math এ সংখ্যা বামের সংখ্যা ১ চেয়ে বড় হলে ঐটা দিয়ে ভাগ 
+12 inch = 1 feet....
+20  inch  = 20/12
+
+Conversion Math এ সংখ্যা বামের সংখ্যা ১ এর সমান হলে ঐটা দিয়ে গুণ 
+
+1 feet = 12 inch
+10 feet = 12 * 10
+
+
+
+20_7 -->
+
+**const today = new Date(); It will show the current date in string **
+
+**const date = new Date("2062-10-24"); It will show this date in String.**
+
+**console.log(date.getDay()); It will show 2 ... means Tuesday cause Day Starts with Sunday where sunday means 0.. Monday = 1 .....**
+
+**console.log(date.getMonth());** //11 ...  It will show the Index number of Month Cause Months like January , February start from index 0 . Jan  = 0, feb = 1 ..... Dec = 11
+
+**const specificDay = new Date(2091, 10, 26); Here Months is used as Index number 
+
+console.log(specificDay.toLocaleString('en-GB'));
+
+**************
+// Unix epoc // Converts dato to sec to compare to date
+
+// Time Zone -------> UTC Time
+// Day Light Saving
+
+// Moment Js for Date time Compare
+*************** Will discuss it latter.
+
+
+20_8 -->
+
+Value swaping using Destructing:
+
+let a  = 5, b = 7;
+[a,b] = [b,a];
+console.log(a,b);
