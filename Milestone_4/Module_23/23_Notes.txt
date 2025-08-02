@@ -1,0 +1,17 @@
+23_4 -->
+
+একটা variable এর value একটা object ও হতে পারে ।
+যেমনঃ
+
+const shoppingCart = [
+    {name: 'Shoes', price: 1200, quantity: 2},
+    {name: 'Shirts', price: 600, quantity: 3},
+    {name: 'Pant', price: 1500, quantity: 1},
+    {name: 'Belt', price: 350, quantity: 1}
+];
+
+let max = shoppingCart[0];
+
+এখানে shoppingCart array এর element গুলা হচ্ছে object .
+
+shoppingCart এর প্রথম index এর object element টা max এর value set করা হয়েছে । তার মানে এখন আমরা max.name , max.price, max.quantity দিয়ে shoppingCart এর প্রথম element এর  property গুলা access করতে পারবো ।
