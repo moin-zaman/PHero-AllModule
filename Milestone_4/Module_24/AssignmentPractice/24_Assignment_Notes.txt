@@ -1,0 +1,25 @@
+Problem 2 -->
+
+if (email.includes('@') === false || email.indexOf('@') !== email.lastIndexOf('@') || email.indexOf('@') === email[0] || email.indexOf('@') === email[email.length - 1])
+
+এখানে 
+
+email.indexOf('@') !== email.lastIndexOf('@') এই conditioner মানে হচ্ছে ঃ
+
+moin@@gmail.com এখানে @ এর শেষ ইন্ডেক্স ৫ কিন্তু প্রথম @ এর index হচ্ছে 4  তার মানে string এর multiple index আছে ।
+
+এর ফলে @ কতোগুলা আছে তার count করতে হয় নাহ 
+let count = 0;
+    for (const ch of email) {
+        if (ch === '@') {
+            count++;
+        }
+    } এতোটুকু লাইন কোড কমে গেলো
+
+
+Problem_3 -->
+
+if('0123456789'.includes(key)) [এখানে 0123456789 এর যেকোনো একটা সংখ্যা key এর সাথে match করলেই true return korbe ]
+    {
+        count++;
+    }
