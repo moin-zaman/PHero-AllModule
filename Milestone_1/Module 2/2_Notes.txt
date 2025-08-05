@@ -1,0 +1,142 @@
+2_1 -->
+
+Css  = Cascading Style sheet
+Cascading = like a fountain
+
+Gives color to the webpages
+Can changes the position
+Can do little bit of animation
+
+specificity =  same tag যদি বার বার লিখি তাহলে সবার নিচের tag টা কাজ করবে ।
+
+
+p{color:red;}
+
+p is called selector , color = property , red = value;
+
+3 types of CSS:
+i) Inline Css
+
+<p style="color: red; text-align: center;">Hello </p>
+
+ii) Internal Css
+iii) External Css
+
+
+
+
+2_2 -->
+
+* Css Measuring Units :
+px = pixels
+em , rem = relative to root element, %, vh, vw
+
+
+2_3 -->
+
+Id = will be unique
+class = can be multiple , can be used for multiple tags.
+
+id selector = (#)
+class selector = (.)
+
+grouping selector : h1, p{}
+attribute selector : input[type="submit"]{}
+input[required]{}
+
+universal selectors : *
+
+
+2_4 -->
+
+font-weight: 400 হচ্ছে normal
+font-size: 30px
+font-family: italic
+
+selector, class, id, grouping, attribute use করে দেখানো হয়েছে ।
+
+<span> </span> কোনো একটা individual word design করার জন্য use করা হয় ।
+
+
+2_5 -->
+
+Border styles
+.blog{
+            background-color: aquamarine;
+            border: 10px solid tomato;
+            /* border-bottom: none; */
+            /* border-bottom: 20px solid salmon; */
+            /* border-radius: 10px; */
+            /* margin-bottom: 10px; */
+            /* margin: 10px 50px; TB LR */
+            /* margin: 10px 50px 100px; T RL B */
+            /* margin: 10px 30px 60px 120px; T R B L */
+            text-align: justify;
+            /* padding: 20px; */
+            /* padding: 10px 40px; TB RL */
+            /* padding: 10px 30px 80px; T LR B */
+            /* padding: 10px 30px 70px 120px; T R B L */
+            margin: 20px;
+            padding: 20px;
+            /* width: 25%; */
+            height: 500px;
+        }
+
+
+
+2_6 -->
+
+<h3>CSS Box Model Depends on few things:</h3>
+    <ol>
+        <li>content</li>
+        <li>border</li>
+        <li>margin</li>
+        <li>padding</li>
+        <li>Width and height</li>
+    </ol>
+
+
+
+2_7 -->
+
+text-decoration: overline, underline, line-through
+
+display: none (content তার স্পেস সহ remove করে ফেলবে)
+visibility: hidden; (content remove করবে কিন্তু তার স্পেস ঠিকিই থাকবে)
+display: block; (content টা কে আবার show করবে অথবা inline কে block content বানাবে )
+display: inline-block;
+
+box-shadow: 10px 20px 5px 10px tomato;
+display: inline;
+
+
+2_8 -->
+
+background করার আগে তার height সেট করে দেওয়া উচিৎ
+
+.header{
+    height: 300px;
+    /* background-image: url('grandma.jpg'); */
+    /* background-image: url('../strong.jpg'); */
+    background-image: url('../images/developers/developer.png');
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-size: cover; */  [ Normal Image কে টেনে বড় করবে ফলে Image ratio নষ্ট হয়ে যাবে ]
+    /* background-size: contain; */ 
+    /* background-size: 200px; */
+}
+
+Inline element এ heigh কাজ করে নাহ, Block element এ height কাজ করে ।
+
+
+2_9 -->
+
+property: What are we trying to change ? : color
+
+background-position: left
+background-position: left top
+background-position: right bottom
+background-position: left bottom
+
+
