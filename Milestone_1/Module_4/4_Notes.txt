@@ -1,0 +1,22 @@
+4_1 -->
+
+We use version Html5
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+
+Some tags of Html5:
+
+audio, canvas, video, details
+
+Input types:
+date, datetime, email, month, number ,range
+
+Semantic =  meaningful tags
+
+like: header, nav, main, aside, article, footer
+
+Advantage:
+i) Accessibility , SEO
+
+If we want to use other website's video or resources then we need to use :
+<iframe width="" height="" src="">  </iframe>
