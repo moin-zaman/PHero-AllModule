@@ -1,0 +1,48 @@
+Create Repo:
+
+git init
+git add .
+git commit  -m 'First main"
+git branch -m main
+git remote add origin <repo url>
+git push -u origin main
+
+
+git configuration with local storage:
+
+git config --global user.email "moinkhan758abzx@gmail.com"
+git config --global user.name "moin-zaman"
+
+w+q or q দিলে terminal exit হয় ।
+
+**Token Generates:
+
+GitHub -> settings -> developer settings --> personal access tokens --> Tokens (classic) --> Expiration (No limit) + Note ( any text) like: main user token --> Select scopes ( all) --> Copy tokens
+
+
+** Terminal or Cmd তে  backward (\) slash use করতে হয়।
+
+
+**GitHub Livelink create:
+settings --> pages --> https://moin-zaman.github.io/PH-Projects/Milestone%205/DOM-Quest-Build-and-Manipulate/index.html
+
+
+
+**Git collaboration :
+git repository --> settings --> collaborators --> add people -->  clone that repo to my local computer --> commit and push
+
+
+**Git Fork workflow:
+
+i)First of all fork any public repo from other github profile --> then  clone that repo from our github profile 
+ii)check the branch of that project --> git branch 
+iii) If it is not in the branch main then change the branch to main  --> git checkout main
+iv)Now create a new from to switch from branch main to new branch --> git checkout -b fruits
+v) now fruits is my new branch even if we write -->( git branch) it will show fruits .
+vi) Now I will normaly use git add . , git commit -m " Abcd", git push , after updating .
+vii)But it will not push to branch fruits cause there is no branch named 'fruits'
+viii) So we need to use command to set brach fruits -->  git push --set-upstream origin add-fruits
+
+Then updated code will be added to add-fruits branch of moin-zaman2 GitHub profile .
+Then create pull request to original moin-zaman profile . Then  he can merge or reject .
+After that if original profile change anything then I can pull his updating code using --> git pull ... command
