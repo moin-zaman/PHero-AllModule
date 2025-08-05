@@ -1,0 +1,104 @@
+1_1 -->
+Html = Hyper text markup language
+
+HyperText means text that contains links to other texts (or resources).
+
+When you click on a link that takes you to another page — that’s hypertext at work.
+
+
+1_2 -->
+
+<p> is a markup tag that tells the browser to treat this as a paragraph.
+
+<i> ---</i> italic tag
+<em> -- </em> This is also an italic tag . But this is called meaning tag , also called semantic tag.
+
+There is 2 way to bold a text :
+<b> </b>
+<strong> </strong> ... Semantic Tag
+
+
+
+1_3 -->
+
+There are 6 heading  tags : h1 --- h6
+
+Inline tag = In a line 
+
+i, em, strong, b, <small> --</small>, <img/> (Word will be small)  [inline tag]
+
+Block tag = It creates new line for another tag .
+
+p, div, heading tag(h1..h6)
+
+
+
+1_4 -->
+
+Break line or Creates new Line ---> <br>
+
+Container tag = That contains another tag.
+
+<button> CLick Me </button>
+
+<ul> type = "circle", "square" etc..
+<li> Burger </li>
+</ul>
+
+<ol> type = "A", "i" etc..
+<li> Burger </li>
+</ol>
+
+lorem (dummy text)
+
+
+
+1_5 -->
+
+For hyper text we have to use : anchor tag <a>
+<a href="google.com" target="_blank">google</a> (inline tag)
+
+
+1_6 -->
+
+void : <img> </img>
+
+self-closing: <img/> (inline tag)
+
+<img src="" alt=""> 
+
+**for free images we can use Unsplash.com**
+
+
+
+1_7-->
+
+For creating form we need to use <form> </form> tag
+
+Inside form tag for creating a fieldSet we need to use  <fieldset></fieldset> tag
+
+inside fieldSet tag we can use <legend> </legend> tag
+
+There are many types of input tag .
+
+<input type="text" name="" id="" placeholder="">
+
+password, email, checkbox, radio, date, file, <select> <option value="cse">CSE </option> </select>,
+submit, reset .. these are input fields .
+
+
+
+1_8 -->
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> By using this we can add an icon our Website
+
+1_9 -->
+
+DOCTYPE = Gives information to the browser about the document type and version
+
+ul tag type = circle, square, none , disc,
+ol tag type = 1, A, a, i, I
+
+img or any file download 
+
+<a href="../Html and Css/resources/Pasha.png" download>Pasha</a>
