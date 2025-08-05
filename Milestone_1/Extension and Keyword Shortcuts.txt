@@ -1,0 +1,17 @@
+1_3 -->
+
+Visual Studio Extension :
+I) Live Server
+ii) Code spell checker
+
+2_2 -->
+
+ctrl + shift + n = new folder creation
+
+ctrl+b = side bar disappear
+
+
+2_3 -->
+alt + shift + down arrow = line copy করে paste করবে নিচের line এ ।
+
+ctrl + l  = line copy করবে  অথবা website এর  url copy  করবে।
