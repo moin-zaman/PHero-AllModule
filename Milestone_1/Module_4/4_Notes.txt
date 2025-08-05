@@ -20,3 +20,65 @@ i) Accessibility , SEO
 
 If we want to use other website's video or resources then we need to use :
 <iframe width="" height="" src="">  </iframe>
+
+
+4_3 (form) file --> Html and CSS folder এ আছে 
+
+4_4 (Table) file --> Html and CSS folder এ আছে 
+
+
+4_5 -->
+
+nav bar  এর file Html and CSS folder এ আছে 
+
+Emmet abbreviation use করা হয়েছে ।
+
+
+4_6 -->
+
+li:hover{
+    background-color: red;
+}
+
+
+4_6 (nested nav bar) file --> Html and CSS folder এ আছে 
+
+
+4_7 -->
+
+Search Html5 tags -- > go to Tutorial Republic website
+
+some important tags:
+a, area, address, article, aside, audio, b, strong, br, button, canvas, caption, col, colgroup, data,, datalist, div, dl, dt, em, fieldset, figcaption, figure, footer, form, header, h1---h6,, hr, i, iframe, img,input, label, legend, li, link, main, map, mark, menu, meta, nav, noscript, object, ol, ul, option, optgroup, picture, progress, script, section, small, span, strong, sub, sup,svg, table, td, template, textarea, time, title, track, u, video, var
+
+
+***
+
+<input type="text" value="Hello">
+
+type="text" → attribute
+value="Hello" → attribute
+
+Attribute সবসময় HTML ট্যাগের অংশ।
+Attribute গুলো initial value দেয়।
+JS দিয়ে getAttribute() বা setAttribute() দিয়ে অ্যাক্সেস করা যায়।
+
+
+4_8 -->
+
+Html attributes :
+
+webiste : w3school or tutorialspoint:
+
+accept, alt, action, async, autocomplete, autofocus, autoplay, checked, selected, cite, class, cols, rows, coord, data-*, datetimee, disabled, download, for, headers, height, width, href, id, label, lang, loop, max, name, span,style, title, value, wrap
+
+<input type="number" max="10" min="5" name="" />
+
+
+***
+
+Emmet abbreviation
+
+main>article.blog*3>h3{My Blog $}+p>lorem10^p>lorem40
+
+website: emmet cheatsheet
