@@ -15,3 +15,8 @@ ctrl+b = side bar disappear
 alt + shift + down arrow = line copy করে paste করবে নিচের line এ ।
 
 ctrl + l  = line copy করবে  অথবা website এর  url copy  করবে।
+
+
+5_5 -->
+
+ctrl + space = emmet on again
