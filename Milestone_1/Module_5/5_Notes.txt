@@ -1,0 +1,94 @@
+5_1 -->
+
+Box Model : web page এর ভেতরে একটা element width, height, margin, padding, border দিয়ে আসলে কতটুকু জায়গা দখল করে আছে সেটাই হচ্ছে Box Model.
+
+** Box Model block level elements এ কাজ করে কিন্তু inline elements এর ক্ষেত্রে পুরোপুরি support করে না। ***
+
+** Inline elements গুলো তার parent এর padding, width, height গুলোকে overflow করে মাঝে মাঝে বাইরে বের হয়ে যাওয়ার উপক্রম হয়ে যায়। **
+
+Height  X Width = Content Size.
+
+Image, Button ইত্যাদি width, height নিয়ে কাজ করতে পারে কিন্তু বেশিরভাগ inline elements width, height support করে না।
+
+
+** Inline element শুধু inline element কেই contain করতে পারে কিন্তু block level element block, inline দুই ধরনের elements কেই contain করতে পারে। ** 
+
+
+
+5_2 -->
+
+Flex Box: কোনো একটা parent এর child elements কে flexibly control করতে চাইলে flex display property টা use করবো।
+
+** Parent element এ flex use করা মানে হলো যে, parent এর child কে control করা flex parent কে কোনো effect করবে না। **
+
+** After using flex property then parent is called : Flex container **
+
+** child elements are called flex items **
+
+** Inline element-এর parent element এ padding দিলে এর child elements গুলো সেই padding-কে overflow করে মাঝে মাঝে বাইরে বের হয়ে আসতে চায়। **
+
+
+
+5_3 -->
+
+justify-content: space-around;
+
+** space-around -> flex items গুলো এর মধ্যে যে gap থাকবে, তা প্রথম এবং শেষ element এর ডান এবং বাঁ পাশে অর্ধেক gap থাকবে। **
+
+justify-content: space-evenly;
+
+** সব জায়গায় সমান space দেবে। **
+
+baki flex property gula file e ache .
+
+
+5_4 && 5_5-->
+
+setup pixso instead of figma
+
+
+5_6 -->
+
+Page size calculate:
+
+Pixso-তে width আছে 1920px এবং তোমার window-তে width আছে 1280px।
+তাহলে 1920px-এর জন্য যেসব value আছে, সেগুলোকে 1280px-এর জন্য convert করতে হবে।
+
+for width 1280px :
+
+ ==== 1280 * 100 / 1920 == 66.67%
+
+ Height =- 919px for width 1920px;
+
+ for width 1280px, the height will be:
+
+ 919 * 66.67 / 100
+
+ or 
+
+ ( 66.67 / 100 = 0.67 (almost))
+
+ 919 * 0.67 = 615px
+
+
+ ** formula : New Size = Original Size × Base Width / Target Width **
+
+
+background: linear-gradient(0deg, rgba(9.197244644165039, 8.92899227142334, 8.92899227142334, 1),rgba(16, 16, 16, 0) 100%), 
+    url('./assets/hero-bg.png');
+
+** এখানে background image এবং color দুটিই একসাথে ব্যবহার করা হয়েছে **
+
+** linear-gradient(0deg) মানে নিচের দিকে একটা background color আসবে, যদি 180deg হত তাহলে উপরের দিকে একটা shadow আসতো **
+
+** Button, Img এগুলোকে display: block; margin: 0 auto; করে horizontally center করা যায়। **
+
+** display: block; করলেও button, img কিন্তু তার parent এর full width নেয় না; বরং এদের width যতটুকু ততটুকুই থাকে, আবার block হিসেবেও থাকে। **
+
+	​
+
+
+
+
+
+
