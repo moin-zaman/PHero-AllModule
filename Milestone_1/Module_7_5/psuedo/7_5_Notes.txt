@@ -1,0 +1,62 @@
+
+**Input field কে focus করার পর যেই outline দেখা যায় তার outline: 0; দিলে outline দেখা যাবে  নাহ ।
+
+
+There are 5 types of CSS Position:
+
+Static
+
+Relative
+
+Absolute
+
+Fixed
+
+Sticky
+
+**প্রথম 3টা (Static, Relative, Absolute) flow related
+**শেষ 2টা (Fixed, Sticky) scroll related
+
+1. Static
+
+Default position (Normal অবস্থায় element থাকে)।
+কোনো extra positioning হয় না।
+
+
+2. Relative
+
+Element তার current position এর সাথে সম্পর্কিত ভাবে move করে।
+Move করলেও element তার original জায়গাটা ধরে রাখে।
+
+
+3. Absolute
+
+Element parent container বা পুরো page এর উপর ভিত্তি করে move করে।
+যদি কোনো parent element এর position set করা থাকে (relative/absolute), তাহলে child সেই parent এর সাথে move করবে।
+না থাকলে, পুরো page/body এর উপর ভিত্তি করে move করবে।
+
+
+4. Fixed
+
+Element সর্বদা screen এ fixed থাকবে (scroll করলেও নড়বে না)।
+সাধারণত navbar, footer, button এর জন্য ব্যবহার হয়।
+
+
+5. Sticky
+
+Relative এবং Fixed এর মিশ্রণ।
+Scroll করলে element নির্দিষ্ট জায়গায় গিয়ে sticky হয়ে যায়।
+
+
+Static → Default
+Relative → Current position এর সাথে move
+Absolute → Parent বা Page এর সাথে move
+Fixed → Screen এ স্থায়ী
+Sticky → Scroll করলে নির্দিষ্ট জায়গায় আটকে যায়
+
+
+**::selection{background-color:yellow;} text mouse দিয়ে select করলে টেক্সট এর color yellow হবে ।
+
+Pseudo Class: :hover, :focus, :visited, li:last-child, li:first-child, li:nth-child(2n+1)
+
+Pseudo Element: ::after, ::before, ::first-line, ::first-letter, ::placeholder, ::selection
