@@ -20,3 +20,8 @@ ctrl + l  = line copy করবে  অথবা website এর  url copy  ক�
 5_5 -->
 
 ctrl + space = emmet on again
+
+
+6_1 -->
+
+ctrl + \ = sidebar remove from pixso.net 
