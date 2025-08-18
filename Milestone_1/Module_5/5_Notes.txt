@@ -85,6 +85,12 @@ background: linear-gradient(0deg, rgba(9.197244644165039, 8.92899227142334, 8.92
 
 ** display: block; করলেও button, img কিন্তু তার parent এর full width নেয় না; বরং এদের width যতটুকু ততটুকুই থাকে, আবার block হিসেবেও থাকে। **
 
+
+5_9 -->
+
+Flex properties:
+Order, flex-shrink, flex-basis, align content, flex grow, flex-shrink, align-self
+
 	​
 
 
