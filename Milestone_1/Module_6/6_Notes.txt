@@ -1,0 +1,5 @@
+6_10 -->
+
+To add icons we have to go -> google fonts awesome website 
+I) We need to add script tag for icons into our html file.
+ii) Then copy the icon tag and paste it  where we want to display it. 

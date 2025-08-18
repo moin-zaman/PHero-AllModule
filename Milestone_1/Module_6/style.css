@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background: rgba(255, 248, 243, 1);
+    padding-top: 60px;
+
+    background: url('./images/developer.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 122px;
+}
+
+.nav-bar {
+    width: 1350px;
+    margin: 60px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-bar .list-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.list-box .anchor-list {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list-box li {
+    list-style-type: none;
+}
+
+.list-box li a {
+    text-decoration: none;
+    color: var(--Dark 02, rgba(71, 71, 71, 1));
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.nav-bar .title {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.nav-bar .title .title-span {
+    color: rgba(253, 110, 10, 1);
+}
+
+.btn {
+    background-color: rgba(253, 110, 10, 1);
+    border-radius: 5px;
+    border: none;
+
+    width: 180px;
+    height: 77px;
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: transform 0.05s ease-in;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.hero-section {
+    margin-left: 276px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    background: url('./images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    /* background: url('./images/developer.png');
+    background-repeat: no-repeat; */
+}
+
+.hero-section .info {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+
+.hero-section .info .sub-title {
+    color: rgba(71, 71, 71, 1);
+
+    font-size: 54px;
+    font-weight: 400;
+}
+
+
+.hero-section .info .title {
+    color: rgba(24, 24, 24, 1);
+
+    font-size: 102px;
+    font-weight: 600;
+}
+
+
+.hero-section .info .description {
+    color: rgba(117, 117, 117, 1);
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+
+    width: 650px;
+
+    margin: 20px 0 30px 0px;
+
+}
+
+.hero-section .btn {
+    margin-right: 30px;
+}
+
+
+.hero-section .hero-pic img {
+    height: 100%;
+    margin-right: 45px;
+
+}
+
+.btn2-color {
+    background: rgba(255, 248, 243, 1);
+    color: rgba(253, 110, 10, 1);
+    border: 1px solid red;
+
+}
+
+
+/* Main Section */
+
+/* Common Styles */
+
+.comm-title {
+    color: rgba(24, 24, 24, 1);
+
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.comm-description {
+    color: rgba(117, 117, 117, 1);
+
+    font-size: 18px;
+    font-weight: 400;
+
+
+    width: 909px;
+    text-align: center;
+    margin: 35px auto;
+}
+
+
+/* About Section */
+
+
+.about {
+    max-width: 1350px;
+    margin: 130px auto;
+    padding: 130px 0;
+
+    border-radius: 10px;
+    background: rgba(255, 248, 243, 1);
+}
+
+.about-desc {
+    width: 827px;
+    margin: 20px auto;
+}
+
+
+.info-cards {
+    width: 827px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-card {
+    text-align: center;
+}
+
+
+/* What I Do  */
+
+.what {
+    margin-top: 156px;
+}
+
+/* Skills */
+
+.skills {
+
+    width: 1350px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skills .skill {
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 1);
+
+    padding: 50px;
+}
+
+
+.skill .title {
+    color: rgba(24, 24, 24, 1);
+
+    font-size: 20px;
+    font-weight: 600;
+
+    padding: 10px 0;
+}
+
+.skill .description {
+    color: rgba(117, 117, 117, 1);
+
+    font-size: 18px;
+    font-weight: 400;
+    width: 220px;
+
+    opacity: 0.8;
+}
