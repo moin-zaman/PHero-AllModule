@@ -1,0 +1,138 @@
+8_1 -->
+
+Flexbox হলো CSS এর একটি layout মডিউল যা elements গুলোকে container-এর মধ্যে সহজে ও সুন্দরভাবে সাজানোর tool .
+
+Layout = পুরো ওয়েবপেজ বা অ্যাপ্লিকেশনের কাঠামো (Structure) বা বিন্যাস।
+
+** Flex Layout Uni-Directional **
+
+Different Units:
+px = Absolute length in pixel (1/96 inch)
+
+percentage (%)
+
+em = Relative to the font-size of the parent element
+
+rem = Relative to font-size of the root element
+
+vw , vh
+
+Absolute units:
+px, Points(pt), Picas(pc)
+
+Relative Units:
+%, em, rem, vh, vw, vmax, vmin
+
+
+8_2 -->
+
+.parent {
+  display: flex;
+  height: 300px;  /* Parent height নির্ধারণ করা হলো */
+  border: 2px solid black;
+}
+
+.child {
+  padding: 40px
+  border: 1px solid red;
+}
+👉 এখানে .parent এর height যদি 300px দেওয়া থাকে, তাহলে .child গুলো parent-এর height অনুযায়ী লম্বালম্বি (stretch) হয়ে যাবে।
+
+কারণ Flexbox এর ডিফল্ট align-items মান হলো stretch
+
+
+** flex: 1; **
+
+যখন লিখি flex: 1;
+
+আসলে এর মানে হলো:
+
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 0%;
+
+
+flex-grow: 1 →
+Child element parent container-এ অতিরিক্ত ফাঁকা জায়গা থাকলে সেটি সমানভাবে ভাগ করে নিবে।
+(মানে, যত child থাকবে, সবাই অতিরিক্ত জায়গা সমান ভাগে পাবে।)
+
+flex-shrink: 1 →
+Parent container ছোট হলে child element গুলো সমান হারে ছোট হতে পারবে।
+
+flex-basis: 0% →
+প্রাথমিক সাইজ (starting size) হবে 0 থেকে, আর তারপরে grow/shrink এর হিসাব হবে।
+
+.parent {
+  display: flex;
+  width: 600px;
+  border: 2px solid black;
+}
+
+.child {
+  flex: 1;
+  border: 1px solid red;
+}
+
+যদি .parent এর মধ্যে ৩টা .child থাকে, তবে তারা প্রত্যেকে সমান জায়গা (200px করে) নিবে, কারণ:
+
+flex-grow: 1 → অতিরিক্ত জায়গা সমান ভাগে নেয়।
+
+flex-basis: 0 → শুরুতে কোন সাইজ রাখে না, সবটাই ভাগ হয়।
+
+
+8_4 -->
+
+Grid : Multi-Directional
+
+Grid Parent Properties:
+
+grid-template-columns
+grid-template-rows
+row-gap: 20px;
+column-gap: 30px;
+gap
+grid-gap
+justify-content
+justify-items
+align-items
+justify-content
+align-content
+place-items
+
+
+Children Properties:
+grid-column: start/end;
+grid-row: start/end;
+justify-self
+align-self
+place-self
+
+
+8_6 -->
+
+For making Responsive website we have to use @media query:
+
+@media screen and (max-width: 576px) {
+           .container{
+            grid-template-columns: repeat(2, 1fr);
+           } 
+        }
+
+
+8_8 -->
+
+For making Responsive Website:
+
+Viewport meta tag
+
+CSS Relative Unit
+
+body max width and horizontal center align
+
+image fluid
+
+two column flex and use media query with flex direction column
+
+multi column: grid layout
+
+menu Responsive: will need Javascript
