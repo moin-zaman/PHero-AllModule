@@ -1,0 +1,37 @@
+8_3 -->
+
+Very Important file 
+
+** Vertical Collage Section is  important**
+
+we used important property of grid :
+
+grid-row: span 3;
+grid-column: span 5;
+
+
+8_4 -->
+
+Here we used an very less used property:
+
+grid-template-area: header;
+grid-template-area: main;
+
+
+8_5 -->
+
+For responsive website we have to understand:
+
+i) breakpoint
+ii) Media Query
+iii) Change style
+iv) fluid image
+iv) navbar/menubar layout 
+vi) relative units
+vii) Testing in Different Devices
+
+
+9_9 -->
+
+Dev.io website for dev challenges
+
