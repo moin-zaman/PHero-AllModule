@@ -1,0 +1,49 @@
+10_1  -->
+
+1️⃣ প্রথমে খুঁজে বের করতে হবে কোন কোন জায়গায় common styles ব্যবহার হচ্ছে (মানে অনেকগুলো জায়গায় একই style দরকার)।
+
+2️⃣ তারপর সেই common styles গুলোকে আলাদা করে CSS file এ লিখতে হবে (যেমন: color, font-size, margin ইত্যাদি)।
+
+3️⃣ এইবার ওই লিখা common styles এর জন্য একটা class বানাতে হবে CSS এ।
+
+4️⃣ শেষে ওই class টা গিয়ে HTML এর tag এর ভেতরে class="..." লিখে বসিয়ে দিতে হবে।
+
+10_2 -->
+
+ctrl + alt + down or upper arrow
+
+
+10_3 -->
+
+I) আমরা responsive করার জন্য px এর বদলে rem অথবা em use করার চেষ্টা করব।
+
+আমরা ধরে নিতে পারি 1rem = 16px।
+তাহলে এটা device এর width এর size অনুযায়ী কাজ করবে।
+
+
+10_7 -->
+CSS এর filter property use করে সহজেই image এর color change করা যায়।
+
+img{
+filter: grayscale(100%);
+}
+
+Multiple filter একসাথে use করা
+
+img {
+  filter: grayscale(100%) blur(2px);
+}
+
+img {
+  filter: contrast(150%);
+}
+
+Sepia effect (পুরোনো ছবির মতো)
+
+img {
+  filter: sepia(100%);
+}
+
+img {
+  filter: brightness(70%);
+}

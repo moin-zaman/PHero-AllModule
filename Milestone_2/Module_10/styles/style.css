@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Common styles */
+
+.layout-size {
+    width: 1440px;
+}
+
+.comm-btn {
+    border-radius: 8px;
+    background-color: rgba(255, 144, 14, 1);
+    border: 0;
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 600px;
+    padding: 20px 30px;
+}
+
+.btn-center {
+    display: block;
+    margin: 0 auto
+}
+
+
+/* Comm Styles - End */
+
+.banner {
+    background: rgba(255, 144, 14, 0.1);
+    padding-top: 63px;
+    padding-bottom: 40px;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+nav .title {
+    color: rgba(19, 19, 19, 1);
+
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center;
+}
+
+.lists {
+    display: flex;
+    gap: 70px;
+    width: 451px;
+}
+
+
+.lists li {
+    list-style-type: none;
+}
+
+.lists a {
+    text-decoration: none;
+
+    color: rgba(66, 66, 66, 1);
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+
+/* Banner Info starts  */
+
+.hide {
+    display: none;
+}
+
+.banner .info {
+    width: 862px;
+    margin: 102px auto;
+}
+
+.banner .info .title {
+
+    padding: 0 150px;
+    color: rgba(19, 19, 19, 1);
+
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center;
+}
+
+.banner .info .description {
+    color: rgba(114, 114, 114, 1);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+
+    padding: 30px 0;
+}
+
+
+/* Banner Info Ends */
+
+
+
+
+
+/* Hero Section Starts */
+
+.banner .hero {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.banner .hero img {
+    width: 100%;
+}
+
+
+/* Hero Sections End */
+
+
+
+
+/* Main Starts */
+
+
+
+/* Feature Team Sections */
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+
+    margin: 102px auto;
+
+}
+
+.features .team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.features .team img {
+    width: 342px;
+    height: 342px;
+}
+
+
+.team-info .title {
+    color: rgba(114, 114, 114, 1);
+    width: 468px;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.team-info .title .t1 {
+    color: rgba(19, 19, 19, 1);
+    font-weight: 600;
+}
+
+.team-info .title .t2 {
+    color: rgba(255, 144, 14, 1);
+    font-weight: 600;
+}
+
+.team-info .description {
+    width: 537px;
+    color: rgba(114, 114, 114, 1);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+    margin: 32px 0;
+}
+
+
+
+/* Features Card */
+
+.features-container {
+    display: flex;
+    margin: 0 auto;
+    gap: 146px;
+
+    /* border: 2px solid black; */
+
+    margin-bottom: 102px;
+
+}
+
+.features-container .features-card .overall-title {
+    width: 468px;
+    margin: 30px 0 24px 24px;
+    padding-right: 30px;
+
+    color: var(--Dark 01, rgba(19, 19, 19, 1));
+
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.features-card .overall-description {
+    color: rgba(114, 114, 114, 1);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.features-card .feature-card {
+    margin-top: 30px;
+    padding: 30px 42px 30px 33px;
+
+    border-radius: 8px;
+
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 1);
+}
+
+.feature-card .title {
+    color: rgba(19, 19, 19, 1);
+    font-size: 20px;
+}
+
+.feature-card .description {
+    color: rgba(114, 114, 114, 1);
+
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 10px;
+}
+
+.features-img{
+    position: relative;
+}
+
+
+.features-img .experience {
+
+    position: absolute;
+    bottom: -30px;
+    left: -70px;
+
+    width: 220px;
+    height: 100px;
+
+    padding: 46px 42px;
+    border-radius: 8px;
+    background: rgba(255, 144, 14, 1);
+}
+
+.features-img .experience h1 {
+
+    color: rgba(255, 255, 255, 1);
+
+    font-size: 54px;
+    font-weight: 600;
+    /* text-align: center; */
+}
+
+
+.experience p {
+    color: rgba(255, 255, 255, 1);
+
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+/* Main Ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query Starts */
+
+/* For smaller device Starts */
+
+@media screen and (max-width: 1200px) {
+
+    .layout-size {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .lists {
+        width: 100%;
+        padding: 40px 0;
+        justify-content: center;
+    }
+
+
+    .banner .info {
+        width: 100%;
+        margin: 30px 0;
+        /* border: 2px solid black; */
+    }
+
+    .banner .info .title {
+        /* border: 2px solid black; */
+        padding: 0;
+    }
+
+    .banner .hero {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner .hero img {
+        width: 90%;
+    }
+
+
+    .features {
+        flex-direction: column;
+        margin: 60px auto;
+
+    }
+
+    .features .team {
+        gap: 14px;
+        width: 90%;
+    }
+
+    .features .team img {
+        width: 100%;
+        height: 250px;
+    }
+
+
+
+    .team-info .title {
+        color: rgba(114, 114, 114, 1);
+        width: 100%;
+        font-size: 45px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .team-info .title .t1 {
+        color: rgba(19, 19, 19, 1);
+        font-weight: 600;
+    }
+
+    .team-info .title .t2 {
+        color: rgba(255, 144, 14, 1);
+        font-weight: 600;
+    }
+
+    .team-info .description {
+        width: 100%;
+        color: rgba(114, 114, 114, 1);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+
+        margin: 32px 0;
+    }
+
+    .comm-btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+.features-container {
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 0;
+
+}
+
+.features-container .features-card .overall-title {
+    width: 96%;
+    margin: 0;
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    padding-right: 0;
+
+}
+
+.features-card .overall-description {
+
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+
+.features-img img{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.features-img .experience {
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    width: 200px;
+    height: 70px;
+    text-align: center;
+
+    padding: 0;
+    border-radius: 8px;
+    background: rgba(255, 144, 14, 1);
+
+    display: block;
+    margin: 20px auto;
+}
+
+.features-img .experience h1 {
+
+
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+
+}
+
+
+/* Smaller Device Ends */
+
+
+
+
+/* Media Query Ends */
