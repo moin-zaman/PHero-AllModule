@@ -1,0 +1,106 @@
+11_1 -->
+
+Rules to follow and things to avoid while designing a website:
+
+
+6 Differences between good and bad web design:
+
+i) Distractions
+ii) Animations
+iii) Typography and Text
+iv) Images and Illustrations
+v) Consistency
+vi) Website Usability
+
+
+
+11_2 -->
+
+Websites and resources to find pictures _ more for your website:
+
+i) Themeforest website
+
+ii) figma community
+
+iii) Dribble website
+
+iv) color schema
+
+v) color palette website -> colorhunt.co
+
+vi) adobe.com
+
+vii) many websites --> haikei.app , coolbackgrounds.io, animation gif --> Lottiefiles, icons8.com, mixkit.com,
+
+viii) for images --> undraw, freepik, unsplash, colorlib.com, frontendmentor.io
+
+
+Before building a Website we have to consider a few things :
+
+1) We have to find some Similar Websites for idea generations.
+ii) Color Scheme 
+iii) Typography and Text
+iv) Need to find lot of resources
+v) Usability
+vI) Responsive
+
+
+11_3 -->
+
+overflow related files and text-overflow
+
+what is css3?
+
+
+11_4 -->
+
+transform related file .
+
+css3 transform property
+
+.inner:hover{
+    transform: translateX(30px) scale(0.5) rotate(45deg);
+}
+
+11_5 -->
+
+**Transform: change the shape. This is a css style property name
+
+**Translate: it is a value of the transform style rule. This means you move either x, or y or both axis
+
+**Transition: how long it will take to do the change of the shape or color
+
+
+
+11_6 -->
+
+Cricket Animations
+
+
+
+11_7 -->
+
+animation: (keyframes name) 3s(completion time) ease-in-out 1s(delay) infinite alternate(direction);
+
+
+11_8 -->
+
+Css custom property using var
+
+:root{
+    --primary-color: tomato;
+}
+
+h1{
+    color: var(--primary-color);
+}
+
+
+calc();
+**width: calc(100% - 200px - 20px);
+
+
+
+11_9 -->
+
+Image এর size resize করার জন্য আমরা Photopea website use করতে পারি
