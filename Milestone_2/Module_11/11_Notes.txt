@@ -104,3 +104,6 @@ calc();
 11_9 -->
 
 Image এর size resize করার জন্য আমরা Photopea website use করতে পারি
+
+i) Photopea website
+ii)tinypng.com
