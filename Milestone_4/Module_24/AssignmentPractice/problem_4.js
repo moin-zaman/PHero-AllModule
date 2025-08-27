@@ -1,54 +1,79 @@
-function calculateFinalScore(obj) {
-    
 
+function calculateFinalScore(obj)
+{
     if(typeof(obj) === 'object')
     {
-        let totalScore = 0;
-
-        if(obj.isFFamily)
+        if(!Array.isArray(obj))
         {
-            let bonus = 20;
-            totalScore += obj.testScore + obj.schoolGrade + bonus;
+            const examScore = obj.testScore;
+            const grade = obj.schoolGrade;
+            const parenProfession = obj.isFFamily;
+            const quotaMarks = 20;
+            let totalGrade = 0;
 
-            if(totalScore >= 80)
+            if(parenProfession === true)
             {
-                return true;
+                
+
+                totalGrade = examScore + grade + quotaMarks;
+                return totalGrade >= 80;
             }
             else{
-                return false;
-            }
+                
+                totalGrade = examScore + grade;
+                return totalGrade >= 80;
 
-        }
-        else{
-
-            totalScore += obj.testScore + obj.schoolGrade;
-
-            if(totalScore >= 80)
-            {
-                return true;
-            }
-            else{
-                return false;
             }
         }
     }
-
     else{
-        return `Invalid Input`;
+        return `Invalid Input`
     }
-
 }
-
-
-
 
 
 const obj = {
     name: "Rajib",
-    testScore: 50,
-    schoolGrade: 30,
-    isFFamily: false
+    testScore: 15,
+    schoolGrade: 25,
+    isFFamily: true
 };
+
+console.log(calculateFinalScore("hello"));
+
+
+// Another Approach
+
+// function calculateFinalScore(obj) {
+//     if (typeof obj !== "object" || Array.isArray(obj) || obj === null) {
+//         return "Invalid Input";
+//     }
+
+//     const examScore = obj.testScore ?? 0;
+//     const grade = obj.schoolGrade ?? 0;
+//     const parentProfession = obj.isFFamily ?? false;
+//     const quotaMarks = 20;
+
+//     let totalGrade = examScore + grade;
+//     if (parentProfession === true) {
+//         totalGrade += quotaMarks;
+//     }
+
+//     return totalGrade >= 80;
+// }
+
+// // ✅ Examples:
+// console.log(calculateFinalScore({
+//     name: "Rajib",
+//     testScore: 15,
+//     schoolGrade: 25,
+//     isFFamily: true
+// }));  // false
+
+// console.log(calculateFinalScore("hello"));  
+
+
+
 
 // const obj = {
 //     name: "Rajib",
@@ -67,7 +92,7 @@ const obj = {
 // };
 
 
-console.log(calculateFinalScore(obj));
+// console.log(calculateFinalScore(obj));
 
 
 // Another Approach

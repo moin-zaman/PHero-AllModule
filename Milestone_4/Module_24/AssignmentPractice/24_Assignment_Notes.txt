@@ -23,3 +23,29 @@ if('0123456789'.includes(key)) [এখানে 0123456789 এর যেকো�
     {
         count++;
     }
+
+
+
+
+Problem 4  -->
+
+?? কে বলে Nullish Coalescing Operator
+
+এর মানে হলো  যদি a null বা undefined হয়, তাহলে b return করবে।
+অন্যথায় a return করবে।
+
+const x = null ?? 5;      // 5 (কারণ x null ছিলো)
+const y = undefined ?? 10; // 10 (কারণ y undefined ছিলো)
+const z = 0 ?? 7;          // 0 (কারণ 0 null/undefined না)
+const w = "" ?? "Hello";   // "" (কারণ empty string null/undefined না)
+
+
+difference between || (Or Operator  && Nullish Coalescing Operator)
+
+const a = 0;
+
+console.log(a || 100); // 100 (কারণ 0 falsy)
+console.log(a ?? 100); // 0   (কারণ 0 null/undefined না)
+
+তাই, যদি শুধু null/undefined হলে fallback চাই, তখন ?? ব্যবহার করা উচিত।
+আর যদি falsy value (0, "", false) পেলেই fallback চাই, তখন || ব্যবহার করা হয়।
