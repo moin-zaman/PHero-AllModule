@@ -1,0 +1,113 @@
+25_2 -->
+
+document.getElementsByTagName('h1');
+HTMLCollection(2) [h1, h1] ---> (Array like object)
+
+
+const liCollection = document.getElementsByTagName('li');
+console.log(liCollection); // It will return the HtmlCollection[] of all Html li in  the file
+
+for(const li of liCollection)
+{
+    console.log(li.innerText);  // it will show the innerText of all list individually
+}
+
+
+
+
+
+25_3 -->
+
+
+**
+কোনো একটা specific element পেতে চাইলে আমরা সেই specific tag এ একটা id দিবো।
+তারপর সেই id কেyId('places-title')
+document.getElementById('places-title') লিখলেই সেই element টা আমরা পেয়ে যাবো।
+**
+
+
+** আবার অনেকগুলা common element পেতে চাইলে আমরা 
+document.getElementsByClassName('places'); use করবো।
+এবং এটা সেই class use করা সব element এর একটা array-like object collection return করবে। **
+
+getElementsByClassName('') এ একটা  element থাকলেও ওইটা একটা element এরই array like collection দিবে ।
+
+
+
+
+25_4 -->
+
+1. document.querySelectorAll('.fruitsContainer')
+--> এটা return করবে একটা NodeList [section.fruitsContainer]।
+কোনো element না পেলে return করবে একটা empty NodeList []।
+
+2. document.querySelector('.fruitsContainer')
+--> এটা return করবে fruitsContainer class যুক্ত html tag।
+
+3. document.querySelector('.fruitsContainer li')
+--> এটা return করবে .fruitsContainer class এর ভেতরের সবগুলো li এর মধ্যে প্রথম li tag।
+
+4. document.querySelector('')
+--> এখানে কিছু না পেলে return করবে null।
+
+
+
+
+
+25_5 -->
+
+1.Selectors → getElementById, getElementsByClassName
+
+2.Style Control → element.style.property দিয়ে CSS change করা যায়
+document.getElementById('fruitsTitle').style.backgroundColor = 'red';
+document.getElementById('fruitsTitle').style.boxShadow = '3px 3px 4px 5px blue';
+
+3.Attributes →
+getAttribute() → value নেয়
+setAttribute() → value set/change করে
+
+console.log(fruitId.getAttribute('id')); 
+fruitsTitle
+
+console.log(fruitId.getAttribute('class'));
+someValue purpleBg greenTitle
+
+4.classList → add(), remove(), toggle() দিয়ে class manage করা যায়
+
+console.log(fruitId.classList);
+DOMTokenList(3) ['someValue', 'purpleBg', 'greenTitle', value: 'someValue purpleBg greenTitle']
+
+5.innerHTML vs innerText →
+innerHTML → full HTML সহ
+innerText → শুধু text
+
+
+
+25_6 -->
+
+foreach loop HTMLCollection[] এ use করা যায় নাহ, for .. of use করা যায় ।
+
+NodeList[] এ for .. of and foreach দুইটাই use করা যায় ।
+
+
+25_7 -->
+
+
+1. childNodes → সব child node দেয় (text সহ)।
+
+2.[index] → specific child access করা যায়।
+
+3.nextSibling / previousSibling → node navigation।
+
+4.querySelector → CSS selector দিয়ে element select করা যায়।
+
+5.createElement() → নতুন element বানানো হয়।
+
+6.innerText → text বসানো হয়।
+
+7.appendChild() → existing parent এর শেষে নতুন child বসানো হয়।
+
+8.parentNode → parent element এ যেতে সাহায্য করে।
+ 
+
+
