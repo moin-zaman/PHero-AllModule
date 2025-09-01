@@ -1,0 +1,73 @@
+25_0 -->
+
+DOM = Document Object Model.
+
+DOM (Document Object Model) হলো HTML বা XML ডকুমেন্টের একটা Programming Interface।
+মানে, HTML file ব্রাউজারে load হওয়ার পর ব্রাউজার সেটাকে একটা Tree structure এ রূপান্তর করে, যেখানে প্রতিটি tag, attribute, text সবকিছু একটা object হয়ে যায়।
+
+এই object গুলোকে আমরা JavaScript দিয়ে access, change, add বা delete করতে পারি।
+
+What DOM Defines ?
+i) The events for all Html elements.
+ii) The method to access all Html elements.
+iii) The properties of  all Html elements.
+iv) ALl Html elements as Objects. 
+
+
+Find the Html elements in 4 ways:
+i) getElementByID
+ii) getElementByClassName
+iii) getElementByTagName
+iv) querySelector&querySelectorAll
+
+Some Javascript Events:
+
+i) onchange
+ii) onclick
+iii) onmouseover
+iv) onblur
+v) onload
+
+** Event মানে হলো কোনো action বা ঘটনা, যেটা ব্রাউজারে ঘটে **
+i) ইউজার যদি একটা button এ click করে → এটা একটা event
+ii) ইউজার keyboard থেকে key চাপলে → এটা event।
+
+Event = Browser এ ঘটে যাওয়া যেকোনো action.
+
+**Event Handler হলো সেই function বা code block, যেটা কোনো event ঘটলে execute হয়**
+মানে, ইউজার কোনো কাজ করলে (event ঘটলে), তার রেসপন্সে কী হবে
+
+
+**Event Bubbling
+
+ --> Event Bubbling মানে হলো – যখন কোনো element-এ event ঘটে, তখন সেই event প্রথমে সেই element-এ trigger হয়, তারপর ধাপে ধাপে তার parent → grandparent → root পর্যন্ত উপরে যায়।
+
+* উদাহরণ:
+একটা button যদি div এর মধ্যে থাকে, আর div আবার body এর মধ্যে থাকে → button এ click করলে event প্রথমে button এ চলবে, তারপর div → তারপর body → তারপর document পর্যন্ত যাবে।
+
+
+
+
+**Event Capturing (Trickling)
+
+--> Event Capturing হলো এর উল্টো। এখানে event প্রথমে সবচেয়ে outer element (root থেকে) শুরু হয়, তারপর ধাপে ধাপে নিচে যায় target element এ।
+
+Bubbling = নিচ থেকে উপরে
+Capturing = উপরে থেকে নিচে
+
+
+** Stop Propagation
+
+--> অনেক সময় event bubbling বা capturing এ গিয়ে parent element এও trigger হয়ে যায়।
+যদি আমরা চাই event শুধু নির্দিষ্ট element এ কাজ করুক, parent এ না যাক → তখন event.stopPropagation() ব্যবহার করি।
+
+
+** Event Delegation
+
+--> Event Delegation মানে হলো – parent element এ event listener বসিয়ে, তার child elements এর event handle করা।
+
+কারণ event bubbling এর কারণে child element এর event parent পর্যন্ত পৌঁছে যায় → তাই parent থেকেই সব handle করা যায়।
+
+কেন দরকার?
+একসাথে অনেক child element এর জন্য আলাদা আলাদা listener না বসিয়ে parent-এ একটা বসালেই হবে।
+Performance ভালো থাকে।
