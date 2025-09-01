@@ -1,0 +1,153 @@
+26_2 -->
+
+onclick('') Event handler / Event listener দিয়ে html file থেকে function call করার বিভিন্ন ways:
+
+1. <button onclick="document.body.style.backgroundColor = 'yellow' " >Make yellow</button>
+
+2. function makeRed()
+{
+    document.body.style.backgroundColor = 'red';
+}
+
+3. const makeBlueButton = document.getElementById('make-blue');
+makeBlueButton.onclick = makeBlue;
+function makeBlue()
+{
+    document.body.style.backgroundColor = 'blue';
+}
+
+4. const makePurple = document.getElementById('make-purple');
+makePurple.onclick = function makePurpleBtn()
+{
+    document.body.style.backgroundColor = 'purple';
+}
+
+
+
+
+26_3 -->
+
+
+** Instead Of using onclick()we will use addEventListener(); :
+
+5. const pinkButton = document.getElementById('make-pink');
+pinkButton.addEventListener('click', makePink);
+function makePink()
+{
+    document.body.style.backgroundColor = 'pink';
+}
+
+6. const greenButton = document.getElementById('make-green');
+greenButton.addEventListener('click', function makeGreen(){
+    document.body.style.backgroundColor = 'green';
+})
+
+7. document.getElementById('make-goldenrod').addEventListener('click', function(){
+    document.body.style.backgroundColor = 'goldenrod';
+})
+
+
+
+26_4 -->
+
+Input field এর Text get করার জন্য --> 
+document.getElementById('input-field').value use করতে হয় instead of innereText .
+
+**This file is good for practice .**
+
+
+25_5 -->
+
+// step-1: add event listener to the post button
+
+// step-2: get the comment inside the text area
+const areaText1 = newComment.value;
+
+// step-3: set the comment  inside the comment container
+    // 1. get the comment conatiner
+    // 2. create a new element (p tag)
+    // 3. set the text of the comment as innerText of the p tag
+    // 4. add the p tag using appendChild
+
+
+
+26_6 -->
+
+
+addEventListener() has so many events Like:
+
+document.getElementById('btn-more').addEventListener('mouseenter', function(){
+    console.log("Event Triggered");
+})
+
+i) 'click', ii) 'mouseenter' iii) 'mousemove' iv) 'focus' in input field v) 'blur' vi) 'keydown' vii) 'keypress' viii) 'keyup' etc.
+
+
+
+
+26_7 -->
+
+** Event মানে হলো কোনো action বা ঘটনা, যেটা ব্রাউজারে ঘটে **
+i) ইউজার যদি একটা button এ click করে → এটা একটা event
+ii) ইউজার keyboard থেকে key চাপলে → এটা event।
+
+Event = Browser এ ঘটে যাওয়া যেকোনো action.
+
+**Event Handler হলো সেই function বা code block, যেটা কোনো event ঘটলে execute হয়**
+মানে, ইউজার কোনো কাজ করলে (event ঘটলে), তার রেসপন্সে কী হবে
+
+
+**Event Bubbling
+
+ --> Event Bubbling মানে হলো – যখন কোনো element-এ event ঘটে, তখন সেই event প্রথমে সেই element-এ trigger হয়, তারপর ধাপে ধাপে তার parent → grandparent → root পর্যন্ত উপরে যায়।
+
+* উদাহরণ:
+একটা button যদি div এর মধ্যে থাকে, আর div আবার body এর মধ্যে থাকে → button এ click করলে event প্রথমে button এ চলবে, তারপর div → তারপর body → তারপর document পর্যন্ত যাবে।
+
+
+**Event Capturing (Trickling)
+
+--> Event Capturing হলো এর উল্টো। এখানে event প্রথমে সবচেয়ে outer element (root থেকে) শুরু হয়, তারপর ধাপে ধাপে নিচে যায় target element এ।
+
+Bubbling = নিচ থেকে উপরে
+Capturing = উপরে থেকে নিচে
+
+
+** Stop Propagation
+
+--> অনেক সময় event bubbling বা capturing এ গিয়ে parent element এও trigger হয়ে যায়।
+যদি আমরা চাই event শুধু নির্দিষ্ট element এ কাজ করুক, parent এ না যাক → তখন event.stopPropagation() ব্যবহার করি।
+
+
+
+** we can stop Event bubbling using event.stopPropagation();
+after that it will just execute of his level's event handler.
+
+We can also stop all others event handler except first event handler using
+event.stopImmediatePropagation();
+
+
+
+
+26_8 -->
+
+** Event Delegation
+
+--> Event Delegation মানে হলো – parent element এ event listener বসিয়ে, তার child elements এর event handle করা।
+
+কারণ event bubbling এর কারণে child element এর event parent পর্যন্ত পৌঁছে যায় → তাই parent থেকেই সব handle করা যায়।
+
+কেন দরকার?
+একসাথে অনেক child element এর জন্য আলাদা আলাদা listener না বসিয়ে parent-এ একটা বসালেই হবে।
+Performance ভালো থাকে।
+
+
+26_9 -->
+
+JS Eveent Loop
+
+Consists of 3 simple concepts:
+i) Call Stack
+ii) Web APIs
+iii) Callback Queue
+
