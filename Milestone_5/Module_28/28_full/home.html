@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+
+    <div class="flex justify-center">
+
+        
+
+            <div class="mockup-phone bg-slate-300">
+
+
+                    <div class="mockup-phone-camera">
+                    
+                    </div>
+                
+                
+                
+                    <div class="mockup-phone-display text-white font-bold 
+                    flex flex-col justify-center">
+
+                    
+                        
+                        <div class="stats shadow w-1/2 mx-auto text-center">
+
+
+
+                            <div class="stat ">
+
+
+                                
+                                <div id="account-balance" class="stat-value">
+
+                                    9400
+
+                                </div>
+
+                                <div class="stat-desc">
+
+                                    Available Amount
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                        <!-- Divider 1 -->
+
+                        <div class="divider divider-warning w-full"></div>
+                        
+                        <!-- Divider 1 End -->
+
+
+                        <div class="flex gap-2 justify-center">
+                            <button id="choose-add-money" class="btn btn-outline btn-primary">Add Money</button>
+
+                            <button id="choose-cash-out" class="btn btn-outline btn-primary">Cash Out</button>
+
+                            <button id="choose-transactions" class="btn btn-outline btn-primary">Transactions</button>
+                        </div>
+
+
+
+
+
+
+
+                        <!-- Divider 2 -->
+
+                        <div class="divider divider-warning w-full"></div>
+                        
+                        <!-- Divider 2 End -->
+
+
+
+
+                        <!-- Add Money Start -->
+
+
+                            <div id="show-add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+
+                              <form class="card-body text-black font-bold">
+
+                                <fieldset class="fieldset">
+                                  <label class="label">Amount</label>
+                                  <input id="enter-amount" type="text" class="input" placeholder="Enter Amount" />
+                                  <label class="label">Pin</label>
+                                  <input id="enter-pin" type="password" class="input" placeholder="Enter Pin" />    
+                                  <button id="btn-add-money" class="btn btn-secondary mt-4">Add Money</button>
+                                </fieldset>
+
+                            </form>
+
+                            </div>
+
+
+                        <!-- Add Money End -->
+
+
+
+                        <!-- cash Out Money Start -->
+
+
+                            <div id="show-cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden ">
+
+                              <form class="card-body text-black font-bold">
+
+                                <fieldset class="fieldset">
+                                  <label class="label">Cash Out</label>
+                                  <input id="enter-cash-out-amount" type="text" class="input" placeholder="Cash out amount" />
+                                  <label class="label">Pin</label>
+                                  <input id="enter-cash-out-pin" type="password" class="input" placeholder="Enter Pin" />    
+                                  <button id="btn-cash-out" class="btn btn-secondary mt-4">Cash Out</button>
+                                </fieldset>
+
+                            </form>
+
+                            </div>
+
+
+                        <!-- Cash Out Money End -->
+
+
+
+
+                        <!-- Transactions Money Start -->
+
+
+                            <div id="show-transactions-form" class=" hidden space-y-5" >
+                                <h1 class="text-center text-4xl">Transactions History</h1>
+
+                                <div id="transactions-container" class="space-y-5">
+
+                                </div>
+
+                            </div>
+
+                            
+
+
+                        <!-- Transactions Money End -->
+
+
+                    
+                    </div>
+
+
+            </div>
+
+
+
+    </div>
+
+    <script src="./js/utilities.js"></script>
+
+    <script src="./js/addMoney.js"></script>
+
+    <script src="./js/cashOut.js"></script>
+
+    <script src="./js/features.js"></script>
+
+</body>
+
+</html>
