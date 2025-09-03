@@ -1,0 +1,42 @@
+27_1 -->
+
+Setup daisyUI using CDN to HTML
+
+
+
+27__2 -->
+
+
+** form submit reloading the page **
+
+Ans : ডিফল্টভাবে HTML form সাবমিট হলে সেটা সার্ভারে রিকোয়েস্ট পাঠায় → আর রেসপন্স পেতে পুরো পেজ reload/refresh হয়।
+এটা পুরোনো traditional web flow।
+
+কিন্তু এখনকার modern web development (React, Vue, Angular বা plain JS) এ আমরা চাই reload ছাড়া data হ্যান্ডেল করতে।
+তাই JavaScript দিয়েই আমরা এই ডিফল্ট behavior control করি।
+
+এজন্য event.preventDefault() ব্যবহার করতে হয়।
+
+** জাভাস্ক্রিপ্টে যখনই কোনো event handler add করা হয় (যেমন click, submit, keyup ইত্যাদি), তখন ব্রাউজার স্বয়ংক্রিয়ভাবে একটি object parameter পাঠায়। সেই object টাকে সাধারণত event (বা সংক্ষেপে e) বলা হয়।
+
+এই event parameter টা কী?
+এটা হচ্ছে একটা Event Object, যেখানে ঘটানো ইভেন্টের সব তথ্য থাকে।
+
+<button id="btn">Click Me</button>
+
+<script>
+  document.getElementById("btn").addEventListener("click", function(event) {
+    console.log(event); // পুরো event object
+    console.log("Event type:", event.type); // কোন event হলো (click, keyup etc.)
+    console.log("Target element:", event.target); // কোন element থেকে event হলো
+  });
+</script>
+
+
+
+27_3 -->
+
+To go from one page to another page :
+window.location.href = './home.html';
+
+
