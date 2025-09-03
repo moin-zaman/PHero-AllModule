@@ -1,0 +1,53 @@
+
+28_3 -->
+
+1. Dependency Issue
+
+Shared JS সাধারণত utility function, config, বা base class রাখে।
+অন্য JS file গুলো এই function/variable গুলো ব্যবহার করে।
+তাই আগে load না করলে → পরে আসা script গুলো ReferenceError দিবে।
+
+2. Global Scope Availability
+
+অনেক সময় shared JS global variable define করে, যেটা project জুড়ে দরকার।
+পরে load করা script সেই global এ access করে।
+আগে load করলে global variable নিশ্চিতভাবে ready থাকে।
+
+3. Code Reuse & DRY Principle
+
+4. Error Prevention
+
+যদি dependency order maintain না হয় →
+Uncaught ReferenceError: functionName is not defined
+Uncaught TypeError: cannot read property ... এরকম error আসবে।
+
+
+
+28_9 -->
+
+Number("540");      // 540
+Number("540.123");  // 540.123
+Number("12e3");     // 12000 (scientific notation)
+Number("abc");      // NaN
+
+
+Validation:
+
+const enterAmount = getInputValueById('enter-amount');
+
+if (isNaN(enterAmount)) {
+  alert("Please enter a valid number only!");
+  return; // function থেকে বের হয়ে যান
+}
+
+
+
+parseInt("123.45"); // 123
+parseInt("123abc"); // 123
+parseInt("abc123"); // NaN ❌
+
+
+parseFloat("123.45");  // 123.45
+parseFloat("123.45abc"); // 123.45
+parseFloat("abc123.45"); // NaN ❌
+
