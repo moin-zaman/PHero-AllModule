@@ -154,12 +154,55 @@ let arr = [1, 4, 6, 8, 9];
 let arr1 = arr.slice(0,2);
 console.log(arr1); 
 
-// slice() যেইসব element বাদ দিয়েছে সেগুলা বাদে remaining element দিয়ে নতুন আরেকটা array return করে . original array এর কোনো পরিবর্তন করে নাহ ।
+// slice() যেইসব element slice করেছে array থেকে সেইসব element দিয়ে নতুন আরেকটা array return করে . original array এর কোনো পরিবর্তন করে নাহ ।
 
 
-let arr1 = arr.sunglassPrice(0,2);
+let arr1 = arr.splice(0,2);
 console.log(arr1); 
 
 splice() যেইসব element বাদ দিয়েছে সেগুলা সেগুলোর নতুন একটা array return করে । আর original array এর বাদ দেওয়া element বাদ দিয়ে modify করে ।
 
 In Js string is Immutable that means we can not modify strings character using array index.
+
+**
+const friends = ["Alarm", "Kelarm", "Selarm", "Jelarm"];
+console.log(friends.includes("Kelarm")); 
+
+এখানে includes check করে array তে element টা আছে কি না !!
+
+
+*Check value that it exist or not
+var valueExistOrNot = 6 in arr;
+console.log(valueExistOrNot); //true
+
+আর "in" property Index টা available আছে কিনা check করে ।
+
+Array.isArray(arr) --> it checks whether a variable array or not .
+
+
+**let arr = ["apple", "banana", "mango"];
+console.log(arr.toString());
+apple,banana,mango
+
+**toString() → number / array / object কে string এ convert করে।
+
+
+
+** 18_9 ->
+
+Boolean(condition)
+তারপর:
+
+যদি result true হয় → if block run হবে
+যদি result false হয় → else block run হবে
+let inputValue = 234;
+console.log(inputValue);
+
+if(!!inputValue)
+{
+    console.log("Value is truthy  value");
+}else{
+    console.log("Value is falsy value");
+}
+
+always ধরে নিতে হবে if এ true আর  else এ false.
