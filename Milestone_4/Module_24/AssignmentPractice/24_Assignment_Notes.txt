@@ -49,3 +49,49 @@ console.log(a ?? 100); // 0   (কারণ 0 null/undefined না)
 
 তাই, যদি শুধু null/undefined হলে fallback চাই, তখন ?? ব্যবহার করা উচিত।
 আর যদি falsy value (0, "", false) পেলেই fallback চাই, তখন || ব্যবহার করা হয়।
+
+
+Optional Chaining(.?):
+**যদি object null বা undefined হয় → error না দিয়ে undefined return করে
+**না থাকলেও code crash হতে দেয় না
+
+obj?.property
+obj?.nested?.property
+arr?.[0]
+
+**
+const user = null;
+console.log(user?.name); // undefined (no error)
+
+**
+const obj = { grade: 30 };
+const grade = obj?.testScore ?? 0;
+
+
+** Some Common Uses:
+
+API response
+data?.user?.name
+
+Form input:
+form?.email?.value
+
+Optional config
+config?.theme
+
+
+১) API response handling: weather বা any API থেকে data আসার সময় nested property safe ভাবে access করার জন্য ব্যবহার করা হয়, যেমন response?.data?.current?.temp যাতে missing data থাকলেও app crash না করে।
+
+২) User profile system: login থাকা বা না থাকা user এর ক্ষেত্রে user?.profile?.name ব্যবহার করে safely username পাওয়া যায়, যাতে guest user হলেও error না আসে।
+
+৩) E-commerce product page: product data incomplete হলে যেমন discount বা pricing missing থাকলে product?.details?.pricing?.discountPrice দিয়ে safe access করা হয়।
+
+৪) Notification system: email বা user data থেকে info নিতে গেলে notification?.user?.email ব্যবহার করা হয় যাতে background job বা notification service crash না করে।
+
+৫) Config / settings system: app settings সবসময় present নাও থাকতে পারে, তাই config?.ui?.theme দিয়ে optional configuration safely access করা হয়।
+
+৬) Dashboard / analytics: report বা stats data missing হতে পারে, তাই stats?.monthly?.revenue ব্যবহার করে safe ভাবে data পড়া হয় যাতে dashboard break না হয়।
+
+
+Number(undefined) // NaN
+Number(null) // 0
