@@ -114,6 +114,20 @@ console.log(!!userID)
 console.log(!userID)
 console.log(userID)
 
+
+if condition-এ → !! দরকার নেই
+variable-এ true/false set করতে চাইলে → !! useful
+
+if এর ক্ষেত্রে (no need !!)
+if (uname.trim()) {
+  console.log("has value");
+}
+if নিজেই boolean-এ convert করে নেয় 
+
+variable-এ boolean set করতে চাইলে
+let hasValue = !!uname.trim();
+console.log(hasValue); // true বা false
+
 ***************
 
 
