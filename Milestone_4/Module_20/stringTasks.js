@@ -41,6 +41,26 @@ else{
 }
 
 
+// let task = "MonZAmneghjU";
+
+
+// task = task.toLowerCase();
+// let vowels = 'aeiou';
+
+// let hasVowels = true;
+
+// for(const v of vowels)
+// {
+//     if(!task.includes(v))
+//     {
+//         hasVowels = false;
+//         break;
+//     }
+// }
+
+// console.log(hasVowels);
+
+
 // Best way
 
 // if (/[aeiou]/.test(task3)) {
